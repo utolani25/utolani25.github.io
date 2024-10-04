@@ -1,0 +1,143 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_9_monetary_regimes.csv"
+    },
+    "config": {
+      "background": "#122B39",
+      "font": "Circular Std",
+      "title": {
+        "color": "whitesmoke",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "subtitleColor": "#b4c8d8"
+      },
+      "mark": {"line": {"interpolate": "monotone", "color": "#36B7B4"}},
+      "legend": {"labelColor": "#b4c8d8"},
+      "view": {"stroke": "transparent", "width": 400, "height": 300},
+      "range": {
+        "category": [
+          "#36B7B4",
+          "#E6224B",
+          "#F4C245",
+          "#0063AF",
+          "#00A767",
+          "#179FDB",
+          "#EB5C2E"
+        ],
+        "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+        "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+        "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+      },
+      "axisX": {
+        "domainColor": "#b4c8d8",
+        "domainOpacity": 0.5,
+        "grid": false,
+        "labelAngle": 0,
+        "labelColor": "#b4c8d8",
+        "labelOpacity": 0.7,
+        "orient": "bottom",
+        "tickColor": "#b4c8d8",
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": "",
+        "titleAlign": "center",
+        "titleAnchor": "middle",
+        "titleColor": "#b4c8d8",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleY": -15
+      },
+      "axisY": {
+        "domainColor": "#b4c8d8",
+        "domainOpacity": 0.5,
+        "format": ".0f",
+        "gridColor": "#b4c8d8",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "labelColor": "#b4c8d8",
+        "labelOpacity": 0.7,
+        "labelPadding": 5,
+        "tickColor": "#b4c8d8",
+        "tickCount": 8,
+        "tickOpacity": 0.5,
+        "ticks": false,
+        "titleX": 15,
+        "title": "FAO price index",
+        "titleColor": "#b4c8d8",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8
+      }
+    },
+    "description": "Inflation UK",
+    "title": {
+      "text": "Monetary frameworks",
+      "subtitle": [
+        "Target variables, 25 advanced economies.",
+        "Source: monetaryframeworks.org and richarddavies.io",
+        " "
+      ],
+      "subtitleFontSize": 12,
+      "fontSize": 16,
+      "anchor": "start"
+    },
+    "width": "container",
+    "height": 350,
+    "mark": "area",
+    "encoding": {
+      "x": {
+        "timeUnit": "year",
+        "field": "Year",
+        "axis": {
+          "format": "%Y",
+          "grid": false,
+          "ticks": false,
+          "labelPadding": 6,
+          "labelFontSize": 11
+        },
+        "title": null
+      },
+      "y": {
+        "field": "Share",
+        "type": "quantitative",
+        "axis": {
+          "format": ".0%",
+          "grid": false,
+          "ticks": false,
+          "labelPadding": 5,
+          "labelFontSize": 11
+        },
+        "title": null
+      },
+      "opacity": {"value": 0.88},
+      "color": {
+        "field": "Series",
+        "title": "Target",
+        "legend": {
+          "orient": "top",
+          "offset": 10,
+          "direction": "horizontal",
+          "padding": 0,
+          "title": null,
+          "labelFontSize": 11
+        }
+      },
+      "tooltip": [
+        {"timeUnit": "year", "field": "Year", "title": "Year"},
+        {"field": "Series", "type": "nominal", "title": "Target"},
+        {
+          "field": "Value",
+          "type": "quantitative",
+          "format": ".0f",
+          "title": "# Countries"
+        },
+        {
+          "field": "Share",
+          "type": "quantitative",
+          "format": ".0%",
+          "title": "Share"
+        }
+      ]
+    },
+    "autosize": {"type": "fit", "contains": "padding", "resize": false}
+  }
