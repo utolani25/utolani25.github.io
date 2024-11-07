@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+
+<!-- We're organising the page into sections, with each section containing a chart, title and a description -->
+<section>
+    <h2> CC1: Hosting </h2>
+</section>
+<section>
+<div class="chart-description">
+    <h3> CC1 1: GDP and Life expectancy</h3>
+    <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+        Here is my first interactive chart which analyzes the relationship between GDP and Life Expectancy across continents in 2022.
+
+
+    </p>
+</div>
+<figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+</section>
+
+</section>
+<div class="chart-description">
+    <h3>CC1 2:  Declining Populations</h3>
+    <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+ This chart describes the percentage change in population.
+    </p>
+</div>
+<figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+</section>    
+
+<section>
+<h2> CC2: Building </h2>
+</section>
+
+</section>
+<div class="chart-description">
+<h3>CC2 1: World Uncertainty Index</h3>
+<p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+The World Uncertainty Index from today's new article "Who suffered most from economic uncertainty early in the Covid-19 pandemic?"
+</p>
+</div>
+<figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+</section> 
+
+</section>
+<div class="chart-description">
+<h3>CC2 2: Monetary Frameworks</h3>
+<p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+In 1974, New Zealand started aimed their monetary policy at a 2% inflation target. At the time they were alone but now almost every advanced economy does the same. 
+The only others are those that target exchange rates instead: for example Denmark maintains a peg with the Euro.
+</p>
+</div>
+<figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+</section> 
+
+</section>
+<div class="chart-description">
+<h3>CC2 3: Business Investment in UK</h3>
+<p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+The above chart showcases business investment levels in the UK.
+</p>
+</div>
+<figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+</section>
+
+<section></section>
+<h2> CC3: Debating </h2>
+</section>
+
+</section>
+<div class="chart-description">
+<h3>CC3 1: Festival of Economics - Tackling a legacy of child poverty, bad diets and poor health</h3>
+<p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+Here, we will present charts to support the discussion on the poor health of children, as highlighted during the Festival of Economics. 
+</p>
+</div>
+</section> 
+
+
+
+<section></section>
+<h2> CC4: Replication </h2>
+</section>
+
+<section></section>
+<h2> CC5: Scraper </h2>
+</section>
+
+
+
+<!-- Do you want to add more sections? -->
+<!-- Try copying pasting the section above -->
+<!-- You'll need to change the id of the figure "<figure id="Location3"... -->
+<!-- ... and add a new variable for the graph spec in the script at the bottom of the page -->
+
+
+<!-- This is a script, it's a way to run JavaScript code on the page -->
+<script>
+// This is a comment in JavaScript - it's a different language to HTML and CSS
+
+let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
+let figure_2_spec = "wk1_declining_pop.json"      
+let figure_3_spec = "wk1_uncertainity_index.json" 
+let figure_4_spec = "wk1_monetary.json"  
+let figure_5_spec = "bst_inv_UK.json"                                                                                                   // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+
+// Do you want to add more graphs?
+// try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
+// e.g. 
+// let figure_3_spec = ...
+// vegaEmbed('#Location3', figure_3_spec)
+
+
+vegaEmbed("#Location2", figure_2_spec)
+vegaEmbed("#Location3", figure_3_spec)
+vegaEmbed("#Location4", figure_4_spec)
+vegaEmbed("#Location5", figure_5_spec)
+</script>
+
+</body>
+
+</html>
