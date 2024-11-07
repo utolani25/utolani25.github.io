@@ -7,34 +7,45 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <style>
-        body {
+       body {
             background-color: lightcyan; /* Set the background color to light green */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: Calibri, sans-serif;
         }
     
-        #chartGrid {
-            display: flex;
+        chart-description,
+        h1,
+        h2,
+        h3,
+        p,
+        figure {
+            text-align: center; /* Center text */
         }
 
-       figure {
+        figure {
             width: 100%;
             max-width: 600px;
-       } 
-        
+        }
     </style>
 </head>
 <body>
-
+    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+        <!-- This is a header, it is the largest text on the page -->
+        Portfolio Tasks
+    </h1>
 <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
 <section>
-    <h2> CC1: Hosting </h2>
+    <h2 class="small" style="margin-bottom: 0px;"> CC1: Hosting </h2>
 </section>
+
 <section>
 <div class="chart-description">
-    <h3> CC1 1: GDP and Life expectancy</h3>
+    <h3 class="small" style="margin-bottom: 0px;">CC1 1: GDP and Life expectancy</h3>
     <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
         Here is my first interactive chart which analyzes the relationship between GDP and Life Expectancy across continents in 2022.
-
-
     </p>
 </div>
 <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -42,7 +53,7 @@
 
 </section>
 <div class="chart-description">
-    <h3>CC1 2:  Declining Populations</h3>
+    <h3 class="small" style="margin-bottom: 0px;">CC1 2:  Declining Populations</h3>
     <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
  This chart describes the percentage change in population.
     </p>
@@ -51,12 +62,12 @@
 </section>    
 
 <section>
-<h2> CC2: Building </h2>
+<h2 class="small" style="margin-bottom: 0px;"> CC2: Building </h2>
 </section>
 
 </section>
 <div class="chart-description">
-<h3>CC2 1: World Uncertainty Index</h3>
+<h3 class="small" style="margin-bottom: 0px;">CC2 1: World Uncertainty Index</h3>
 <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
 The World Uncertainty Index from today's new article "Who suffered most from economic uncertainty early in the Covid-19 pandemic?"
 </p>
@@ -66,10 +77,9 @@ The World Uncertainty Index from today's new article "Who suffered most from eco
 
 </section>
 <div class="chart-description">
-<h3>CC2 2: Monetary Frameworks</h3>
+<h3 class="small" style="margin-bottom: 0px;">CC2 2: Monetary Frameworks</h3>
 <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-In 1974, New Zealand started aimed their monetary policy at a 2% inflation target. At the time they were alone but now almost every advanced economy does the same. 
-The only others are those that target exchange rates instead: for example Denmark maintains a peg with the Euro.
+In 1974, New Zealand started aimed their monetary policy at a 2% inflation target. <br> At the time they were alone but now almost every advanced economy does the same. <br> The only others are those that target exchange rates instead: for example Denmark maintains a peg with the Euro.
 </p>
 </div>
 <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -77,7 +87,7 @@ The only others are those that target exchange rates instead: for example Denmar
 
 </section>
 <div class="chart-description">
-<h3>CC2 3: Business Investment in UK</h3>
+<h3 class="small" style="margin-bottom: 0px;">CC2 3: Business Investment in UK</h3>
 <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
 The above chart showcases business investment levels in the UK.
 </p>
@@ -86,12 +96,12 @@ The above chart showcases business investment levels in the UK.
 </section>
 
 <section></section>
-<h2> CC3: Debating </h2>
+<h2 class="small" style="margin-bottom: 0px;"> CC3: Debating </h2>
 </section>
 
 </section>
 <div class="chart-description">
-<h3>CC3 1: Festival of Economics - Tackling a legacy of child poverty, bad diets and poor health</h3>
+<h3 class="small" style="margin-bottom: 0px;">CC3 1: Festival of Economics - Tackling a legacy of child poverty, bad diets and poor health</h3>
 <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
 Here, we will present charts to support the discussion on the poor health of children, as highlighted during the Festival of Economics. 
 </p>
@@ -101,11 +111,11 @@ Here, we will present charts to support the discussion on the poor health of chi
 
 
 <section></section>
-<h2> CC4: Replication </h2>
+<h2 class="small" style="margin-bottom: 0px;"> CC4: Replication </h2>
 </section>
 
 <section></section>
-<h2> CC5: Scraper </h2>
+<h2 class="small" style="margin-bottom: 0px;"> CC5: Scraper </h2>
 </section>
 
 
