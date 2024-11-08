@@ -9,42 +9,46 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <style>
-       body {
-            background-color: lightsteelblue;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            font-family: Calibri, sans-serif;
+        body {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #f0f4f8, #c6d3f5);
+            margin: 0;
+            padding: 10px;
         }
-    
-        chart-description,
-        h1,
-        h2,
-        h3,
-        p,
-        figure {
-            text-align: center; /* Center text */
+
+        /* Styled as a non-clickable element */
+        .button {
+            font-size: 2rem;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #A3B8C3, #6D7F8B); /* Soft blue gradient */
+            color: white;
+            border-radius: 30px;
+            margin: 10px;
+            cursor: default; /* No cursor change */
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-weight: 600;
         }
 
         figure {
             width: 100%;
             max-width: 600px;
         }
+
     </style>
 </head>
 <body>
-    <div style="background-color: white; color: black; padding: 10px; border-radius: 15px;">
-        <h1 class="big" style="margin: 0px;">
-            Portfolio Tasks
+        <h1>
+    <div class="button">Portfolio Tasks</div>
         </h1>
-    </div>
-<!-- We're organising the page into sections, with each section containing a chart, title and a description -->
-<section>
-    
-    <h2 style="background-color: white; color: black; padding: 10px; border-radius: 15px;"> CC1: Hosting </h2>
-</section>
+
+        <section>
+            <h2 style="background-color: peachpuff; color: black; padding: 10px; border-radius: 15px; margin: 20px auto; max-width: 600px;"> CC1: Hosting </h2>
+        </section>
+
+
 
 <section style="background-color: white; color: black; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
 <div class="chart-description">
@@ -67,7 +71,7 @@
 </section>    
 
 <section>
-    <h2 style="background-color: white; color: black; padding: 10px; border-radius: 15px;"> CC2: Building </h2>
+    <h2 style="background-color: peachpuff; color: black; padding: 10px; border-radius: 15px; margin: 20px auto; max-width: 600px;">CC2: Building </h2>
 </section>
 
 <section style="background-color: white; color: black; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
@@ -101,7 +105,7 @@ The above chart showcases business investment levels in the UK.
 </section>
 
 <section></section>
-<h2 style="background-color: white; color: black; padding: 10px; border-radius: 15px;"> CC3: Debating </h2>
+<h2 style="background-color: peachpuff; color: black; padding: 10px; border-radius: 15px; margin: 20px auto; max-width: 600px;"> CC3: Debating </h2>
 </section>
 
 <section style="background-color: white; color: black; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
@@ -116,7 +120,7 @@ Here, we will present charts to support the discussion on the poor health of chi
 
 
 <section></section>
-<h2 style="background-color: white; color: black; padding: 10px; border-radius: 15px;"> CC4: Replication </h2>
+<h2 style="background-color: peachpuff; color: black; padding: 10px; border-radius: 15px; margin: 20px auto; max-width: 600px;">CC4: Replication </h2>
 </section>
 
 <section style="background-color: white; color: black; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
@@ -139,7 +143,7 @@ Here, we will present charts to support the discussion on the poor health of chi
 
 
 <section></section>
-<h2 style="background-color: white; color: black; padding: 10px; border-radius: 15px;"> CC5: Scraper </h2>
+<h2 style="background-color: peachpuff; color: black; padding: 10px; border-radius: 15px; margin: 20px auto; max-width: 600px;">CC5: Scraper </h2>
 </section>
 
 
