@@ -2,13 +2,16 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <style>
        body {
-            background-color: lightcyan; /* Set the background color to light green */
+            background-color: lightsteelblue;
+            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -32,16 +35,18 @@
     </style>
 </head>
 <body>
-    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-        <!-- This is a header, it is the largest text on the page -->
-        Portfolio Tasks
-    </h1>
+    <div style="background-color: white; color: black; padding: 10px; border-radius: 15px;">
+        <h1 class="big" style="margin: 0px;">
+            Portfolio Tasks
+        </h1>
+    </div>
 <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
 <section>
-    <h2 class="small" style="margin-bottom: 0px;"> CC1: Hosting </h2>
+    
+    <h2 style="background-color: white; color: black; padding: 10px; border-radius: 15px;"> CC1: Hosting </h2>
 </section>
 
-<section>
+<section style="background-color: white; color: black; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
 <div class="chart-description">
     <h3 class="small" style="margin-bottom: 0px;">CC1 1: GDP and Life expectancy</h3>
     <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
@@ -51,7 +56,7 @@
 <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
 </section>
 
-</section>
+<section style="background-color: white; color: black; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
 <div class="chart-description">
     <h3 class="small" style="margin-bottom: 0px;">CC1 2:  Declining Populations</h3>
     <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
@@ -62,10 +67,10 @@
 </section>    
 
 <section>
-<h2 class="small" style="margin-bottom: 0px;"> CC2: Building </h2>
+    <h2 style="background-color: white; color: black; padding: 10px; border-radius: 15px;"> CC2: Building </h2>
 </section>
 
-</section>
+<section style="background-color: white; color: black; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
 <div class="chart-description">
 <h3 class="small" style="margin-bottom: 0px;">CC2 1: World Uncertainty Index</h3>
 <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
@@ -75,7 +80,7 @@ The World Uncertainty Index from today's new article "Who suffered most from eco
 <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
 </section> 
 
-</section>
+<section style="background-color: white; color: black; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
 <div class="chart-description">
 <h3 class="small" style="margin-bottom: 0px;">CC2 2: Monetary Frameworks</h3>
 <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
@@ -85,7 +90,7 @@ In 1974, New Zealand started aimed their monetary policy at a 2% inflation targe
 <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
 </section> 
 
-</section>
+<section style="background-color: white; color: black; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
 <div class="chart-description">
 <h3 class="small" style="margin-bottom: 0px;">CC2 3: Business Investment in UK</h3>
 <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
@@ -96,10 +101,10 @@ The above chart showcases business investment levels in the UK.
 </section>
 
 <section></section>
-<h2 class="small" style="margin-bottom: 0px;"> CC3: Debating </h2>
+<h2 style="background-color: white; color: black; padding: 10px; border-radius: 15px;"> CC3: Debating </h2>
 </section>
 
-</section>
+<section style="background-color: white; color: black; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
 <div class="chart-description">
 <h3 class="small" style="margin-bottom: 0px;">CC3 1: Festival of Economics - Tackling a legacy of child poverty, bad diets and poor health</h3>
 <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
@@ -111,11 +116,30 @@ Here, we will present charts to support the discussion on the poor health of chi
 
 
 <section></section>
-<h2 class="small" style="margin-bottom: 0px;"> CC4: Replication </h2>
+<h2 style="background-color: white; color: black; padding: 10px; border-radius: 15px;"> CC4: Replication </h2>
 </section>
 
+<section style="background-color: white; color: black; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
+    <div class="chart-description">
+    <h3 class="small" style="margin-bottom: 0px;">CC2 3: Bad Chart</h3>
+    <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+    The below chart showcases the state of social sector spending in India.
+    </p>
+    </div>
+    <img src="Bad_chart.jpg"  style="display: block; margin: 20px auto; width: 400px; height: auto;">
+</section> 
+
+<section style="background-color: white; color: black; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
+    <div class="chart-description">
+    <h3 class="small" style="margin-bottom: 0px;">CC2 3: Replication Version</h3>
+        </div>
+
+</section>
+
+
+
 <section></section>
-<h2 class="small" style="margin-bottom: 0px;"> CC5: Scraper </h2>
+<h2 style="background-color: white; color: black; padding: 10px; border-radius: 15px;"> CC5: Scraper </h2>
 </section>
 
 
