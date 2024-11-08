@@ -1,86 +1,94 @@
-<!-- This HTML file provides a simple example of a portfolio page. It contains a header, a few sections, and a few charts. -->
-<!-- It works with the three css files in this folder: example1.css, example2.css and example3.css. -->
-<!-- The HTML file defines the structure of the page, and the CSS files define how it looks. -->
-<!-- The CSS examples are all designed to work with this page. Try swapping them out on line 29 and see what happens. -->
-
-<!-- Take a look around and make your own copy to adapt for your own use. -->
-
-<!-- This is a comment -->
-<!-- Comments are not displayed in the browser -->
-<!-- They can be used to leave notes in the code -->
-
 <!DOCTYPE html>
-<html> 
-    <!-- HTML is heirarchial: tags like this define elements on the page. 
-    Each tag does something different. For example:
-        - The <html> tag defines the whole document.
-        - The <h1> tag defines a large heading
-        - The <p> tag defines a paragraph
-        - Tags appear as an opening <div> and closing </div> pair
-    -->
-
+<html lang="en"> 
 <head>    
-    <!-- The head tag links to resources our page needs and defines information about it. Tags in the <head> aren't displayed on the page. -->
-
-    <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
-    <!-- Try swapping example1.css to another, and take a look at example1.css to see if you understand it-->
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Data Science Website</title> <!-- The title displayed in the browser tab, not on the page itself -->
-
-    <!-- This is a link to the vega-lite which we're using to make graphs -->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unnati's DS Website</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
-       body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            font-family: Calibri, sans-serif;
-        }
-    
-        chart-description,
-        h1,
-        h2,
-        h3,
-        p,
-        figure {
-            text-align: center; /* Center text */
+        body {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #f0f4f8, #c6d3f5);
+            margin: 0;
+            padding: 20px;
         }
 
-        figure {
-            width: 100%;
-            max-width: 600px;
+        h1 {
+            font-weight: 600;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
         }
-        
+
+        h3 {
+            font-weight: 400;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .button {
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #A3B8C3, #6D7F8B); /* Soft blue gradient */
+            color: white;
+            border: none;
+            border-radius: 30px;
+            margin: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .button:hover {
+            background: linear-gradient(135deg, #6D7F8B, #4B5C64); /* Slightly darker blue on hover */
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 200px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 
 <body> 
-<!-- The body tag contains the elements that visitors to our page will see. -->
-    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-        <!-- This is a header, it is the largest text on the page -->
-       Unnati Tolani
-    </h1>
-    <h2 style="margin-top: 0px;  color: darkblue">
-        <!-- we're setting the margin to 0px so the header and authour name are close together -->
-       <a href="https://www.linkedin.com/in/unnati-tolani-7b24241ab/">LinkedIn</a> | <a
-            href="https://github.com/utolani25/utolani25.github.io">GitHub</a> | <a
-            href="https://github.com/utolani25/utolani25.github.io/portfolio.html">Portfolio</a> | <a
-            href="">Project</a>     
-    </h2>
-    <img src="UTpic.jpg"  style="display: block; margin: 20px auto; max-width: 200px;">
-    <h3 class="small; style="margin-bottom: 0px;"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        Hello, I’m Unnati Tolani – a second-year MPA student at LSE specializing in Economic Policy. <br> <br>
-        Welcome to my website!<br> <br>
-        I’m passionate about transforming ambiguity into clear solutions, using data to create narratives that lead to real-world impact. <br>
-        From sustainable finance to economic issues, I like researching, analyzing data and questioning things. <br> <br>
-        Work Experience: World Bank, Accenture Strategy and Consulting
+    <h1>PP434 Automated Data Visualisation for Policymaking</h1>
+    <h1>Unnati Tolani | LSE MPA | 202310570</h1>
+
+    <img src="UTpic.jpg" alt="Unnati's Picture">
+    
+    <h3>
+        Hello, I’m Unnati Tolani – a second-year MPA student at LSE specializing in Economic Policy.<br><br> 
+        Welcome to my website!<br><br>
+        I’m passionate about transforming ambiguity into clear solutions, using data to create narratives that lead to real-world impact.<br>
+        From sustainable finance to economic issues, I like researching, analyzing data, and questioning things.<br><br>
     </h3>
 
-   
+    <div>
+        <a href="https://www.linkedin.com/in/unnati-tolani-7b24241ab/" class="button">LinkedIn</a>
+        <a href="https://github.com/utolani25/utolani25.github.io" class="button">GitHub</a>
+        <a href="https://github.com/utolani25/utolani25.github.io/portfolio.html" class="button">Portfolio</a>
+        <a href="#" class="button">Project</a>
+    </div>
 </body>
-
 </html>
+
