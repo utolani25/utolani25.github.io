@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "height": 300,
+  "width": 300,
+  "view": {"strokeOpacity": 0},
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_x_world_pyramid.csv"
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "name": "Year:",
+        "min": 1950,
+        "max": 2021,
+        "step": 1
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.Year == selectedYear "},
+    {
+      "calculate": "datum.Age == '100+' ? '>100' : datum.Age",
+      "as": "cleanedAge"
+    },
+    {
+      "calculate": "datum.cleanedAge == '5-9' ? '05-9' : datum.cleanedAge",
+      "as": "cleanedAge"
+    },
+    {
+      "calculate": "datum.Gender == 'Male'? (-abs(datum.Population))/1000 : (datum.Population)/1000",
+      "as": "cleanedPopulation"
+    }
+  ],
+  "mark": {"type": "bar"},
+  "encoding": {
+    "y": {
+      "field": "cleanedAge",
+      "axis": {
+        "title": null,
+        "domain": false,
+        "ticks": false,
+        "labelColor": "black",
+        "offset": -150,
+        "zindex": 10,
+        "labelAlign": "center"
+      },
+      "type": "ordinal",
+      "sort": "-y"
+    },
+    "x": {
+      "field": "cleanedPopulation",
+      "title": null,
+      "scale": {"domain": [-400, 400]},
+      "axis": {"grid": false, "labelExpr": "abs(datum.value) + 'M'"},
+      "type": "quantitative"
+    },
+    "color": {"field": "Gender", "scale": {"scheme": "pastel2"}}
+  }
+}
