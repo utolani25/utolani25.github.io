@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "Top 10 Countries by ECI (2021)",
+    "subtitle": "Ranked by the Economic Complexity Index",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "#333333",
+    "fontSize": 16,
+    "fontWeight": "bold"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/CC5/CC5_Data.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+
+  "height": 400,
+  "width": 300,
+
+  "mark": {
+    "type": "bar",
+    "color": "#E57373",
+    "opacity": 0.85
+  },
+
+  "encoding": {
+    "x": {
+      "field": "Country",
+      "type": "nominal",
+      "sort": "-y",
+      "axis": {
+        "title": "Country",
+        "labelAngle": 45,
+        "labelFontSize": 12,
+        "titleFontSize": 14,
+        "titleFontWeight": "bold",
+        "grid": false,
+        "ticks": false
+      }
+    },
+
+    "y": {
+      "field": "Index (2021)",
+      "type": "quantitative",
+      "title": "Economic Complexity Index",
+      "axis": {
+        "grid": true,
+        "ticks": true,
+        "tickCount": 6,
+        "titleFontSize": 14,
+        "labelFontSize": 12
+      }
+    },
+
+    "tooltip": [
+      {"field": "Country", "type": "nominal", "title": "Country"},
+      {"field": "Index (2021)", "type": "quantitative", "title": "ECI Value"},
+      {"field": "Rank", "type": "quantitative", "title": "Ranking"}
+    ]
+  },
+
+  "transform": [
+    {
+      "sort": [{"field": "Rank", "order": "ascending"}]
+    }
+  ],
+
+  "config": {
+    "axis": {
+      "domainWidth": 1,
+      "gridColor": "#F5F5F5"
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}
