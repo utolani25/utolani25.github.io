@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Behind the Screens",
+    "subtitle": "A Deep Dive into book my show's Revenue Streams",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 13,
+    "anchor": "start",
+    "color": "red",
+    "fontWeight": "bold",
+    "subtitleFontWeight": "bold"
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/bad_chart_data.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Amount (in Cr)",
+      "type": "quantitative",
+      "title": "Amount (in Crores)",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "Revenue Streams",
+      "type": "nominal",
+      "title": "Revenue Streams",
+      "sort": "-x"
+    },
+    "color": {
+      "field": "Revenue Streams",
+      "type": "nominal",
+      "scale": {
+        "scheme": "reds"
+
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {"field": "Revenue Streams", "title": "Division"},
+      {"field": "Amount (in Cr)", "title": "Share of total revenue (in Cr)", "format": ",.1f"}
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 14
+    },
+    "bar": {
+      "cornerRadius": 3
+    }
+  }
+}
