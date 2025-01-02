@@ -1,29 +1,8 @@
-﻿Country,Age
-Finland,21.3
-Sweden,21.4
-Denmark,21.7
-Estonia,22.7
-Netherlands,23
-France,23.4
-Germany,23.8
-Lithuania,24.7
-Austria,25.3
-Czechia,25.9
-Belgium,26.3
-EU-27,26.4
-Luxembourg,26.8
-Lativa,26.8
-Iceland,26.9
-Hungary,27.1
-Cyprus,27.5
-Romania,27.7
-Poland,28.9
-Slovenia,29.4
-Portugal,29.7
-Italy,30
-Malta ,30.1
-Spain,30.3
-Bulgaria,30.3
-Greece,30.7
-Slovakia,30.8
-Croatia,33.4
+﻿Category,Percentage
+Illiterate,30%
+Upto Primary,25%
+Middle,18%
+Secondary,12%
+Higher Secondary,6%
+Diploma/Certificate Course,1%
+Graduate & Above,2%
