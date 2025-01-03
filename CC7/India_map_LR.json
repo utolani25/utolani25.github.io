@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 300,
+  "height": 300,
+  "background": "#F4F6F9",
+  "data": {
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/India_map.json",
+    "format": {"property": "features"}
+  },
+   "title": {
+      "text": "Literacy Rates, India",
+      "fontSize": 16,
+      "font": "Arial",
+      "align": "center",
+      "anchor": "middle",
+      "fontWeight": "bold"
+    },
+  "transform": [
+    {
+      "lookup": "properties.ID_1",
+      "from": {
+        "key": "ID_1",
+        "fields": ["State", "STC", "Male Literacy Rate %", "Female Literacy Rate %", "Average Literacy Rate %"],
+        "data": {
+          "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/CC7/IND_States_LR.csv"
+        }
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "condition": {
+        "value": "lightgray",
+        "test": "!datum['Average Literacy Rate %']"
+      },
+      "field": "Average Literacy Rate %",
+      "type": "quantitative",
+      "legend": {
+        "title": "Average Literacy Rate",
+        "format": ".2f",
+        "titleFontSize": 12,
+        "labelFontSize": 10,
+        "titleAnchor":"middle"
+      },
+      "scale": {
+        "type": "quantile",
+        "scheme": "tealblues",
+        "reverse": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "State",
+        "title": "State"
+      },
+      {
+        "field": "Male Literacy Rate %",
+        "title": "Male Literacy Rate (%)",
+        "format": ".2f"
+      },
+      {
+        "field": "Female Literacy Rate %",
+        "title": "Female Literacy Rate (%)",
+        "format": ".2f"
+      },
+      {
+        "field": "Average Literacy Rate %",
+        "title": "Average Literacy Rate (%)",
+        "format": ".2f"
+      }
+    ]
+  }
+}
+
