@@ -1,0 +1,764 @@
+Second Tier Authority,Calendar Year,Sector,Emissions
+Yorkshire and the Humber Total,2005.0,Industry Total,"19,840.3"
+Yorkshire and the Humber Total,2006.0,Industry Total,"19,435.7"
+Yorkshire and the Humber Total,2007.0,Industry Total,"18,907.5"
+Yorkshire and the Humber Total,2008.0,Industry Total,"17,573.7"
+Yorkshire and the Humber Total,2009.0,Industry Total,"14,031.9"
+Yorkshire and the Humber Total,2010.0,Industry Total,"16,053.8"
+Yorkshire and the Humber Total,2011.0,Industry Total,"15,352.9"
+Yorkshire and the Humber Total,2012.0,Industry Total,"14,316.1"
+Yorkshire and the Humber Total,2013.0,Industry Total,"14,628.2"
+Yorkshire and the Humber Total,2014.0,Industry Total,"13,516.7"
+Yorkshire and the Humber Total,2015.0,Industry Total,"14,048.6"
+Yorkshire and the Humber Total,2016.0,Industry Total,"12,673.1"
+Yorkshire and the Humber Total,2017.0,Industry Total,"12,367.8"
+Yorkshire and the Humber Total,2018.0,Industry Total,"12,302.3"
+Yorkshire and the Humber Total,2019.0,Industry Total,"11,357.4"
+Yorkshire and the Humber Total,2020.0,Industry Total,"10,665.9"
+Yorkshire and the Humber Total,2021.0,Industry Total,"11,246.0"
+Yorkshire and the Humber Total,2022.0,Industry Total,"9,739.2"
+London Total,2005.0,Industry Total,"3,189.6"
+London Total,2006.0,Industry Total,"3,194.1"
+London Total,2007.0,Industry Total,"3,086.3"
+London Total,2008.0,Industry Total,"3,020.4"
+London Total,2009.0,Industry Total,"2,689.8"
+London Total,2010.0,Industry Total,"2,921.6"
+London Total,2011.0,Industry Total,"2,599.6"
+London Total,2012.0,Industry Total,"2,739.6"
+London Total,2013.0,Industry Total,"2,632.9"
+London Total,2014.0,Industry Total,"2,365.2"
+London Total,2015.0,Industry Total,"2,190.3"
+London Total,2016.0,Industry Total,"1,900.8"
+London Total,2017.0,Industry Total,"2,087.8"
+London Total,2018.0,Industry Total,"1,780.0"
+London Total,2019.0,Industry Total,"1,662.9"
+London Total,2020.0,Industry Total,"1,494.2"
+London Total,2021.0,Industry Total,"1,637.4"
+London Total,2022.0,Industry Total,"1,645.8"
+England Total,2005.0,Industry Total,"1,03,111.7"
+England Total,2006.0,Industry Total,"1,00,019.9"
+England Total,2007.0,Industry Total,"98,080.1"
+England Total,2008.0,Industry Total,"91,950.6"
+England Total,2009.0,Industry Total,"77,158.2"
+England Total,2010.0,Industry Total,"78,361.7"
+England Total,2011.0,Industry Total,"70,876.9"
+England Total,2012.0,Industry Total,"74,625.8"
+England Total,2013.0,Industry Total,"74,185.8"
+England Total,2014.0,Industry Total,"68,335.4"
+England Total,2015.0,Industry Total,"63,784.4"
+England Total,2016.0,Industry Total,"53,863.3"
+England Total,2017.0,Industry Total,"54,356.5"
+England Total,2018.0,Industry Total,"51,128.2"
+England Total,2019.0,Industry Total,"48,259.2"
+England Total,2020.0,Industry Total,"44,758.1"
+England Total,2021.0,Industry Total,"47,019.1"
+England Total,2022.0,Industry Total,"42,747.4"
+Wales Total,2005.0,Industry Total,"13,404.2"
+Wales Total,2006.0,Industry Total,"13,900.8"
+Wales Total,2007.0,Industry Total,"14,123.8"
+Wales Total,2008.0,Industry Total,"13,223.3"
+Wales Total,2009.0,Industry Total,"10,414.7"
+Wales Total,2010.0,Industry Total,"12,878.9"
+Wales Total,2011.0,Industry Total,"11,645.0"
+Wales Total,2012.0,Industry Total,"10,137.0"
+Wales Total,2013.0,Industry Total,"13,055.9"
+Wales Total,2014.0,Industry Total,"13,104.9"
+Wales Total,2015.0,Industry Total,"11,972.9"
+Wales Total,2016.0,Industry Total,"10,741.5"
+Wales Total,2017.0,Industry Total,"10,968.4"
+Wales Total,2018.0,Industry Total,"9,999.8"
+Wales Total,2019.0,Industry Total,"10,344.4"
+Wales Total,2020.0,Industry Total,"9,709.2"
+Wales Total,2021.0,Industry Total,"10,125.5"
+Wales Total,2022.0,Industry Total,"9,205.9"
+Scotland Total,2005.0,Industry Total,"10,869.8"
+Scotland Total,2006.0,Industry Total,"10,978.7"
+Scotland Total,2007.0,Industry Total,"10,777.6"
+Scotland Total,2008.0,Industry Total,"10,237.2"
+Scotland Total,2009.0,Industry Total,"9,183.3"
+Scotland Total,2010.0,Industry Total,"9,640.3"
+Scotland Total,2011.0,Industry Total,"8,959.4"
+Scotland Total,2012.0,Industry Total,"8,864.1"
+Scotland Total,2013.0,Industry Total,"8,544.3"
+Scotland Total,2014.0,Industry Total,"7,602.2"
+Scotland Total,2015.0,Industry Total,"7,411.5"
+Scotland Total,2016.0,Industry Total,"7,037.9"
+Scotland Total,2017.0,Industry Total,"7,277.3"
+Scotland Total,2018.0,Industry Total,"6,894.1"
+Scotland Total,2019.0,Industry Total,"6,377.0"
+Scotland Total,2020.0,Industry Total,"6,138.6"
+Scotland Total,2021.0,Industry Total,"6,159.1"
+Scotland Total,2022.0,Industry Total,"6,074.8"
+Northern Ireland Total,2005.0,Industry Total,"3,755.3"
+Northern Ireland Total,2006.0,Industry Total,"3,896.9"
+Northern Ireland Total,2007.0,Industry Total,"4,117.3"
+Northern Ireland Total,2008.0,Industry Total,"3,730.0"
+Northern Ireland Total,2009.0,Industry Total,"3,060.4"
+Northern Ireland Total,2010.0,Industry Total,"3,229.7"
+Northern Ireland Total,2011.0,Industry Total,"2,982.8"
+Northern Ireland Total,2012.0,Industry Total,"2,924.5"
+Northern Ireland Total,2013.0,Industry Total,"2,911.5"
+Northern Ireland Total,2014.0,Industry Total,"2,835.3"
+Northern Ireland Total,2015.0,Industry Total,"2,730.9"
+Northern Ireland Total,2016.0,Industry Total,"2,424.1"
+Northern Ireland Total,2017.0,Industry Total,"2,269.3"
+Northern Ireland Total,2018.0,Industry Total,"2,090.3"
+Northern Ireland Total,2019.0,Industry Total,"2,012.4"
+Northern Ireland Total,2020.0,Industry Total,"1,765.4"
+Northern Ireland Total,2021.0,Industry Total,"1,857.8"
+Northern Ireland Total,2022.0,Industry Total,"1,763.6"
+,,Industry Total,
+Yorkshire and the Humber Total,2005.0,Commercial Total,"6,337.4"
+Yorkshire and the Humber Total,2006.0,Commercial Total,"6,472.1"
+Yorkshire and the Humber Total,2007.0,Commercial Total,"6,089.4"
+Yorkshire and the Humber Total,2008.0,Commercial Total,"6,104.1"
+Yorkshire and the Humber Total,2009.0,Commercial Total,"5,323.0"
+Yorkshire and the Humber Total,2010.0,Commercial Total,"5,572.7"
+Yorkshire and the Humber Total,2011.0,Commercial Total,"5,147.2"
+Yorkshire and the Humber Total,2012.0,Commercial Total,"5,363.7"
+Yorkshire and the Humber Total,2013.0,Commercial Total,"5,163.8"
+Yorkshire and the Humber Total,2014.0,Commercial Total,"4,451.7"
+Yorkshire and the Humber Total,2015.0,Commercial Total,"3,882.2"
+Yorkshire and the Humber Total,2016.0,Commercial Total,"3,426.9"
+Yorkshire and the Humber Total,2017.0,Commercial Total,"2,849.6"
+Yorkshire and the Humber Total,2018.0,Commercial Total,"3,269.9"
+Yorkshire and the Humber Total,2019.0,Commercial Total,"2,950.9"
+Yorkshire and the Humber Total,2020.0,Commercial Total,"2,552.8"
+Yorkshire and the Humber Total,2021.0,Commercial Total,"2,824.8"
+Yorkshire and the Humber Total,2022.0,Commercial Total,"2,600.4"
+London Total,2005.0,Commercial Total,"14,847.5"
+London Total,2006.0,Commercial Total,"16,069.3"
+London Total,2007.0,Commercial Total,"15,506.9"
+London Total,2008.0,Commercial Total,"15,570.4"
+London Total,2009.0,Commercial Total,"13,865.7"
+London Total,2010.0,Commercial Total,"14,671.3"
+London Total,2011.0,Commercial Total,"13,102.9"
+London Total,2012.0,Commercial Total,"14,430.5"
+London Total,2013.0,Commercial Total,"13,454.0"
+London Total,2014.0,Commercial Total,"11,257.6"
+London Total,2015.0,Commercial Total,"9,987.5"
+London Total,2016.0,Commercial Total,"8,737.9"
+London Total,2017.0,Commercial Total,"7,173.1"
+London Total,2018.0,Commercial Total,"7,840.4"
+London Total,2019.0,Commercial Total,"7,034.2"
+London Total,2020.0,Commercial Total,"5,903.2"
+London Total,2021.0,Commercial Total,"6,616.1"
+London Total,2022.0,Commercial Total,"6,466.9"
+England Total,2005.0,Commercial Total,"68,596.0"
+England Total,2006.0,Commercial Total,"71,249.7"
+England Total,2007.0,Commercial Total,"68,169.8"
+England Total,2008.0,Commercial Total,"67,611.3"
+England Total,2009.0,Commercial Total,"58,955.9"
+England Total,2010.0,Commercial Total,"62,115.5"
+England Total,2011.0,Commercial Total,"55,957.6"
+England Total,2012.0,Commercial Total,"61,081.3"
+England Total,2013.0,Commercial Total,"57,545.2"
+England Total,2014.0,Commercial Total,"49,155.0"
+England Total,2015.0,Commercial Total,"43,583.9"
+England Total,2016.0,Commercial Total,"37,995.3"
+England Total,2017.0,Commercial Total,"31,284.1"
+England Total,2018.0,Commercial Total,"35,236.0"
+England Total,2019.0,Commercial Total,"31,866.9"
+England Total,2020.0,Commercial Total,"27,458.3"
+England Total,2021.0,Commercial Total,"30,519.5"
+England Total,2022.0,Commercial Total,"28,985.0"
+Wales Total,2005.0,Commercial Total,"3,762.0"
+Wales Total,2006.0,Commercial Total,"3,773.4"
+Wales Total,2007.0,Commercial Total,"3,592.1"
+Wales Total,2008.0,Commercial Total,"3,506.0"
+Wales Total,2009.0,Commercial Total,"3,060.6"
+Wales Total,2010.0,Commercial Total,"3,171.6"
+Wales Total,2011.0,Commercial Total,"2,839.5"
+Wales Total,2012.0,Commercial Total,"3,057.0"
+Wales Total,2013.0,Commercial Total,"2,918.6"
+Wales Total,2014.0,Commercial Total,"2,495.6"
+Wales Total,2015.0,Commercial Total,"2,214.4"
+Wales Total,2016.0,Commercial Total,"1,938.4"
+Wales Total,2017.0,Commercial Total,"1,521.2"
+Wales Total,2018.0,Commercial Total,"1,764.0"
+Wales Total,2019.0,Commercial Total,"1,599.7"
+Wales Total,2020.0,Commercial Total,"1,352.6"
+Wales Total,2021.0,Commercial Total,"1,485.3"
+Wales Total,2022.0,Commercial Total,"1,369.5"
+Scotland Total,2005.0,Commercial Total,"6,897.0"
+Scotland Total,2006.0,Commercial Total,"7,188.9"
+Scotland Total,2007.0,Commercial Total,"7,076.1"
+Scotland Total,2008.0,Commercial Total,"7,013.2"
+Scotland Total,2009.0,Commercial Total,"5,970.2"
+Scotland Total,2010.0,Commercial Total,"6,415.4"
+Scotland Total,2011.0,Commercial Total,"5,906.6"
+Scotland Total,2012.0,Commercial Total,"6,216.0"
+Scotland Total,2013.0,Commercial Total,"5,825.0"
+Scotland Total,2014.0,Commercial Total,"4,752.3"
+Scotland Total,2015.0,Commercial Total,"4,494.3"
+Scotland Total,2016.0,Commercial Total,"3,899.8"
+Scotland Total,2017.0,Commercial Total,"3,194.8"
+Scotland Total,2018.0,Commercial Total,"3,636.6"
+Scotland Total,2019.0,Commercial Total,"3,288.5"
+Scotland Total,2020.0,Commercial Total,"2,845.7"
+Scotland Total,2021.0,Commercial Total,"3,103.8"
+Scotland Total,2022.0,Commercial Total,"3,067.8"
+Northern Ireland Total,2005.0,Commercial Total,853.3
+Northern Ireland Total,2006.0,Commercial Total,939.6
+Northern Ireland Total,2007.0,Commercial Total,"1,007.5"
+Northern Ireland Total,2008.0,Commercial Total,"1,001.1"
+Northern Ireland Total,2009.0,Commercial Total,896.4
+Northern Ireland Total,2010.0,Commercial Total,954.6
+Northern Ireland Total,2011.0,Commercial Total,872.4
+Northern Ireland Total,2012.0,Commercial Total,902.7
+Northern Ireland Total,2013.0,Commercial Total,910.9
+Northern Ireland Total,2014.0,Commercial Total,835.7
+Northern Ireland Total,2015.0,Commercial Total,721.0
+Northern Ireland Total,2016.0,Commercial Total,612.3
+Northern Ireland Total,2017.0,Commercial Total,555.0
+Northern Ireland Total,2018.0,Commercial Total,634.2
+Northern Ireland Total,2019.0,Commercial Total,591.9
+Northern Ireland Total,2020.0,Commercial Total,472.9
+Northern Ireland Total,2021.0,Commercial Total,501.2
+Northern Ireland Total,2022.0,Commercial Total,473.5
+,,Commercial Total,
+Yorkshire and the Humber Total,2005.0,Public Sector Total,"2,196.5"
+Yorkshire and the Humber Total,2006.0,Public Sector Total,"2,106.4"
+Yorkshire and the Humber Total,2007.0,Public Sector Total,"1,986.1"
+Yorkshire and the Humber Total,2008.0,Public Sector Total,"1,918.1"
+Yorkshire and the Humber Total,2009.0,Public Sector Total,"1,690.6"
+Yorkshire and the Humber Total,2010.0,Public Sector Total,"1,803.7"
+Yorkshire and the Humber Total,2011.0,Public Sector Total,"1,636.0"
+Yorkshire and the Humber Total,2012.0,Public Sector Total,"1,741.3"
+Yorkshire and the Humber Total,2013.0,Public Sector Total,"1,716.6"
+Yorkshire and the Humber Total,2014.0,Public Sector Total,"1,488.5"
+Yorkshire and the Humber Total,2015.0,Public Sector Total,"1,324.2"
+Yorkshire and the Humber Total,2016.0,Public Sector Total,"1,209.4"
+Yorkshire and the Humber Total,2017.0,Public Sector Total,"1,229.2"
+Yorkshire and the Humber Total,2018.0,Public Sector Total,"1,073.2"
+Yorkshire and the Humber Total,2019.0,Public Sector Total,"1,031.3"
+Yorkshire and the Humber Total,2020.0,Public Sector Total,955.0
+Yorkshire and the Humber Total,2021.0,Public Sector Total,"1,041.2"
+Yorkshire and the Humber Total,2022.0,Public Sector Total,960.4
+London Total,2005.0,Public Sector Total,"3,885.0"
+London Total,2006.0,Public Sector Total,"3,903.0"
+London Total,2007.0,Public Sector Total,"3,668.4"
+London Total,2008.0,Public Sector Total,"3,657.0"
+London Total,2009.0,Public Sector Total,"3,306.6"
+London Total,2010.0,Public Sector Total,"3,546.3"
+London Total,2011.0,Public Sector Total,"3,152.7"
+London Total,2012.0,Public Sector Total,"3,428.8"
+London Total,2013.0,Public Sector Total,"3,305.4"
+London Total,2014.0,Public Sector Total,"2,851.9"
+London Total,2015.0,Public Sector Total,"2,603.6"
+London Total,2016.0,Public Sector Total,"2,290.9"
+London Total,2017.0,Public Sector Total,"2,510.9"
+London Total,2018.0,Public Sector Total,"1,991.9"
+London Total,2019.0,Public Sector Total,"1,814.2"
+London Total,2020.0,Public Sector Total,"1,697.1"
+London Total,2021.0,Public Sector Total,"1,829.0"
+London Total,2022.0,Public Sector Total,"1,701.5"
+England Total,2005.0,Public Sector Total,"22,682.6"
+England Total,2006.0,Public Sector Total,"21,912.1"
+England Total,2007.0,Public Sector Total,"20,675.8"
+England Total,2008.0,Public Sector Total,"20,118.2"
+England Total,2009.0,Public Sector Total,"17,715.4"
+England Total,2010.0,Public Sector Total,"18,983.2"
+England Total,2011.0,Public Sector Total,"16,920.6"
+England Total,2012.0,Public Sector Total,"18,275.8"
+England Total,2013.0,Public Sector Total,"17,739.6"
+England Total,2014.0,Public Sector Total,"15,372.4"
+England Total,2015.0,Public Sector Total,"14,073.1"
+England Total,2016.0,Public Sector Total,"12,428.6"
+England Total,2017.0,Public Sector Total,"12,937.0"
+England Total,2018.0,Public Sector Total,"11,145.2"
+England Total,2019.0,Public Sector Total,"10,319.7"
+England Total,2020.0,Public Sector Total,"9,665.1"
+England Total,2021.0,Public Sector Total,"10,378.7"
+England Total,2022.0,Public Sector Total,"9,714.2"
+Wales Total,2005.0,Public Sector Total,"1,329.2"
+Wales Total,2006.0,Public Sector Total,"1,270.9"
+Wales Total,2007.0,Public Sector Total,"1,185.2"
+Wales Total,2008.0,Public Sector Total,"1,127.6"
+Wales Total,2009.0,Public Sector Total,976.8
+Wales Total,2010.0,Public Sector Total,"1,020.9"
+Wales Total,2011.0,Public Sector Total,903.9
+Wales Total,2012.0,Public Sector Total,963.1
+Wales Total,2013.0,Public Sector Total,931.2
+Wales Total,2014.0,Public Sector Total,802.6
+Wales Total,2015.0,Public Sector Total,719.7
+Wales Total,2016.0,Public Sector Total,658.7
+Wales Total,2017.0,Public Sector Total,657.4
+Wales Total,2018.0,Public Sector Total,605.0
+Wales Total,2019.0,Public Sector Total,528.9
+Wales Total,2020.0,Public Sector Total,487.8
+Wales Total,2021.0,Public Sector Total,532.5
+Wales Total,2022.0,Public Sector Total,503.6
+Scotland Total,2005.0,Public Sector Total,"2,565.7"
+Scotland Total,2006.0,Public Sector Total,"2,528.7"
+Scotland Total,2007.0,Public Sector Total,"2,442.2"
+Scotland Total,2008.0,Public Sector Total,"2,397.0"
+Scotland Total,2009.0,Public Sector Total,"2,060.6"
+Scotland Total,2010.0,Public Sector Total,"2,272.0"
+Scotland Total,2011.0,Public Sector Total,"2,058.9"
+Scotland Total,2012.0,Public Sector Total,"2,171.2"
+Scotland Total,2013.0,Public Sector Total,"2,081.0"
+Scotland Total,2014.0,Public Sector Total,"1,731.8"
+Scotland Total,2015.0,Public Sector Total,"1,675.6"
+Scotland Total,2016.0,Public Sector Total,"1,456.4"
+Scotland Total,2017.0,Public Sector Total,"1,537.6"
+Scotland Total,2018.0,Public Sector Total,"1,305.9"
+Scotland Total,2019.0,Public Sector Total,"1,260.7"
+Scotland Total,2020.0,Public Sector Total,"1,165.4"
+Scotland Total,2021.0,Public Sector Total,"1,273.8"
+Scotland Total,2022.0,Public Sector Total,"1,178.6"
+Northern Ireland Total,2005.0,Public Sector Total,524.5
+Northern Ireland Total,2006.0,Public Sector Total,535.8
+Northern Ireland Total,2007.0,Public Sector Total,557.9
+Northern Ireland Total,2008.0,Public Sector Total,546.8
+Northern Ireland Total,2009.0,Public Sector Total,502.0
+Northern Ireland Total,2010.0,Public Sector Total,540.5
+Northern Ireland Total,2011.0,Public Sector Total,504.8
+Northern Ireland Total,2012.0,Public Sector Total,520.4
+Northern Ireland Total,2013.0,Public Sector Total,529.7
+Northern Ireland Total,2014.0,Public Sector Total,503.5
+Northern Ireland Total,2015.0,Public Sector Total,428.0
+Northern Ireland Total,2016.0,Public Sector Total,373.8
+Northern Ireland Total,2017.0,Public Sector Total,341.2
+Northern Ireland Total,2018.0,Public Sector Total,349.2
+Northern Ireland Total,2019.0,Public Sector Total,355.3
+Northern Ireland Total,2020.0,Public Sector Total,296.1
+Northern Ireland Total,2021.0,Public Sector Total,326.4
+Northern Ireland Total,2022.0,Public Sector Total,298.3
+,,Public Sector Total,
+Yorkshire and the Humber Total,2005.0,Domestic Total,"13,617.4"
+Yorkshire and the Humber Total,2006.0,Domestic Total,"13,500.3"
+Yorkshire and the Humber Total,2007.0,Domestic Total,"12,966.6"
+Yorkshire and the Humber Total,2008.0,Domestic Total,"12,865.4"
+Yorkshire and the Humber Total,2009.0,Domestic Total,"11,762.4"
+Yorkshire and the Humber Total,2010.0,Domestic Total,"12,665.8"
+Yorkshire and the Humber Total,2011.0,Domestic Total,"11,128.9"
+Yorkshire and the Humber Total,2012.0,Domestic Total,"11,861.1"
+Yorkshire and the Humber Total,2013.0,Domestic Total,"11,523.4"
+Yorkshire and the Humber Total,2014.0,Domestic Total,"9,812.1"
+Yorkshire and the Humber Total,2015.0,Domestic Total,"9,584.2"
+Yorkshire and the Humber Total,2016.0,Domestic Total,"8,947.7"
+Yorkshire and the Humber Total,2017.0,Domestic Total,"8,588.2"
+Yorkshire and the Humber Total,2018.0,Domestic Total,"8,498.9"
+Yorkshire and the Humber Total,2019.0,Domestic Total,"8,323.1"
+Yorkshire and the Humber Total,2020.0,Domestic Total,"8,036.8"
+Yorkshire and the Humber Total,2021.0,Domestic Total,"8,154.6"
+Yorkshire and the Humber Total,2022.0,Domestic Total,"6,968.8"
+London Total,2005.0,Domestic Total,"17,756.4"
+London Total,2006.0,Domestic Total,"17,656.1"
+London Total,2007.0,Domestic Total,"17,220.0"
+London Total,2008.0,Domestic Total,"17,292.5"
+London Total,2009.0,Domestic Total,"15,766.4"
+London Total,2010.0,Domestic Total,"16,931.7"
+London Total,2011.0,Domestic Total,"14,900.2"
+London Total,2012.0,Domestic Total,"16,051.6"
+London Total,2013.0,Domestic Total,"15,655.9"
+London Total,2014.0,Domestic Total,"13,210.5"
+London Total,2015.0,Domestic Total,"12,734.9"
+London Total,2016.0,Domestic Total,"12,039.3"
+London Total,2017.0,Domestic Total,"11,258.0"
+London Total,2018.0,Domestic Total,"11,151.5"
+London Total,2019.0,Domestic Total,"10,686.3"
+London Total,2020.0,Domestic Total,"10,496.6"
+London Total,2021.0,Domestic Total,"10,758.4"
+London Total,2022.0,Domestic Total,"9,460.4"
+England Total,2005.0,Domestic Total,"1,31,060.2"
+England Total,2006.0,Domestic Total,"1,30,902.1"
+England Total,2007.0,Domestic Total,"1,26,830.6"
+England Total,2008.0,Domestic Total,"1,26,274.8"
+England Total,2009.0,Domestic Total,"1,15,111.7"
+England Total,2010.0,Domestic Total,"1,23,549.4"
+England Total,2011.0,Domestic Total,"1,08,411.5"
+England Total,2012.0,Domestic Total,"1,16,307.5"
+England Total,2013.0,Domestic Total,"1,13,177.6"
+England Total,2014.0,Domestic Total,"96,196.3"
+England Total,2015.0,Domestic Total,"93,554.3"
+England Total,2016.0,Domestic Total,"87,859.3"
+England Total,2017.0,Domestic Total,"83,414.9"
+England Total,2018.0,Domestic Total,"82,515.6"
+England Total,2019.0,Domestic Total,"79,513.5"
+England Total,2020.0,Domestic Total,"77,885.5"
+England Total,2021.0,Domestic Total,"79,205.0"
+England Total,2022.0,Domestic Total,"68,983.8"
+Wales Total,2005.0,Domestic Total,"8,292.6"
+Wales Total,2006.0,Domestic Total,"8,356.6"
+Wales Total,2007.0,Domestic Total,"7,885.3"
+Wales Total,2008.0,Domestic Total,"8,023.3"
+Wales Total,2009.0,Domestic Total,"7,342.3"
+Wales Total,2010.0,Domestic Total,"7,864.3"
+Wales Total,2011.0,Domestic Total,"6,809.8"
+Wales Total,2012.0,Domestic Total,"7,218.3"
+Wales Total,2013.0,Domestic Total,"7,073.2"
+Wales Total,2014.0,Domestic Total,"6,021.3"
+Wales Total,2015.0,Domestic Total,"5,830.8"
+Wales Total,2016.0,Domestic Total,"5,509.4"
+Wales Total,2017.0,Domestic Total,"5,243.8"
+Wales Total,2018.0,Domestic Total,"5,195.1"
+Wales Total,2019.0,Domestic Total,"5,003.9"
+Wales Total,2020.0,Domestic Total,"4,868.8"
+Wales Total,2021.0,Domestic Total,"4,879.9"
+Wales Total,2022.0,Domestic Total,"4,297.1"
+Scotland Total,2005.0,Domestic Total,"14,759.8"
+Scotland Total,2006.0,Domestic Total,"14,767.0"
+Scotland Total,2007.0,Domestic Total,"14,395.2"
+Scotland Total,2008.0,Domestic Total,"14,379.8"
+Scotland Total,2009.0,Domestic Total,"13,090.3"
+Scotland Total,2010.0,Domestic Total,"13,960.1"
+Scotland Total,2011.0,Domestic Total,"12,260.6"
+Scotland Total,2012.0,Domestic Total,"13,086.3"
+Scotland Total,2013.0,Domestic Total,"12,617.9"
+Scotland Total,2014.0,Domestic Total,"10,725.4"
+Scotland Total,2015.0,Domestic Total,"10,452.7"
+Scotland Total,2016.0,Domestic Total,"9,512.0"
+Scotland Total,2017.0,Domestic Total,"9,203.8"
+Scotland Total,2018.0,Domestic Total,"8,994.7"
+Scotland Total,2019.0,Domestic Total,"8,812.0"
+Scotland Total,2020.0,Domestic Total,"8,342.2"
+Scotland Total,2021.0,Domestic Total,"8,584.6"
+Scotland Total,2022.0,Domestic Total,"7,367.2"
+Northern Ireland Total,2005.0,Domestic Total,"5,184.5"
+Northern Ireland Total,2006.0,Domestic Total,"5,371.3"
+Northern Ireland Total,2007.0,Domestic Total,"5,115.7"
+Northern Ireland Total,2008.0,Domestic Total,"5,315.0"
+Northern Ireland Total,2009.0,Domestic Total,"5,014.1"
+Northern Ireland Total,2010.0,Domestic Total,"5,385.7"
+Northern Ireland Total,2011.0,Domestic Total,"4,633.8"
+Northern Ireland Total,2012.0,Domestic Total,"4,875.0"
+Northern Ireland Total,2013.0,Domestic Total,"4,968.4"
+Northern Ireland Total,2014.0,Domestic Total,"4,400.6"
+Northern Ireland Total,2015.0,Domestic Total,"4,290.8"
+Northern Ireland Total,2016.0,Domestic Total,"4,043.1"
+Northern Ireland Total,2017.0,Domestic Total,"3,856.0"
+Northern Ireland Total,2018.0,Domestic Total,"3,904.1"
+Northern Ireland Total,2019.0,Domestic Total,"3,819.6"
+Northern Ireland Total,2020.0,Domestic Total,"3,714.6"
+Northern Ireland Total,2021.0,Domestic Total,"3,675.3"
+Northern Ireland Total,2022.0,Domestic Total,"3,522.8"
+,,Domestic Total,
+Yorkshire and the Humber Total,2005.0,Transport Total,"11,881.9"
+Yorkshire and the Humber Total,2006.0,Transport Total,"11,757.1"
+Yorkshire and the Humber Total,2007.0,Transport Total,"11,844.9"
+Yorkshire and the Humber Total,2008.0,Transport Total,"11,370.2"
+Yorkshire and the Humber Total,2009.0,Transport Total,"10,947.5"
+Yorkshire and the Humber Total,2010.0,Transport Total,"10,879.0"
+Yorkshire and the Humber Total,2011.0,Transport Total,"10,755.2"
+Yorkshire and the Humber Total,2012.0,Transport Total,"10,614.1"
+Yorkshire and the Humber Total,2013.0,Transport Total,"10,621.2"
+Yorkshire and the Humber Total,2014.0,Transport Total,"10,870.7"
+Yorkshire and the Humber Total,2015.0,Transport Total,"11,157.5"
+Yorkshire and the Humber Total,2016.0,Transport Total,"11,471.7"
+Yorkshire and the Humber Total,2017.0,Transport Total,"11,488.7"
+Yorkshire and the Humber Total,2018.0,Transport Total,"11,511.2"
+Yorkshire and the Humber Total,2019.0,Transport Total,"11,501.9"
+Yorkshire and the Humber Total,2020.0,Transport Total,"9,545.1"
+Yorkshire and the Humber Total,2021.0,Transport Total,"9,916.7"
+Yorkshire and the Humber Total,2022.0,Transport Total,"9,808.1"
+London Total,2005.0,Transport Total,"10,718.8"
+London Total,2006.0,Transport Total,"10,460.5"
+London Total,2007.0,Transport Total,"10,260.1"
+London Total,2008.0,Transport Total,"9,579.6"
+London Total,2009.0,Transport Total,"9,325.1"
+London Total,2010.0,Transport Total,"9,466.7"
+London Total,2011.0,Transport Total,"9,206.5"
+London Total,2012.0,Transport Total,"9,087.1"
+London Total,2013.0,Transport Total,"9,004.1"
+London Total,2014.0,Transport Total,"9,006.1"
+London Total,2015.0,Transport Total,"9,113.4"
+London Total,2016.0,Transport Total,"9,279.8"
+London Total,2017.0,Transport Total,"9,242.5"
+London Total,2018.0,Transport Total,"9,184.6"
+London Total,2019.0,Transport Total,"8,904.0"
+London Total,2020.0,Transport Total,"7,256.8"
+London Total,2021.0,Transport Total,"7,757.6"
+London Total,2022.0,Transport Total,"7,517.4"
+England Total,2005.0,Transport Total,"1,17,147.2"
+England Total,2006.0,Transport Total,"1,15,916.2"
+England Total,2007.0,Transport Total,"1,16,413.8"
+England Total,2008.0,Transport Total,"1,11,896.5"
+England Total,2009.0,Transport Total,"1,08,475.7"
+England Total,2010.0,Transport Total,"1,07,571.8"
+England Total,2011.0,Transport Total,"1,05,923.0"
+England Total,2012.0,Transport Total,"1,04,447.2"
+England Total,2013.0,Transport Total,"1,03,652.8"
+England Total,2014.0,Transport Total,"1,05,150.1"
+England Total,2015.0,Transport Total,"1,07,616.4"
+England Total,2016.0,Transport Total,"1,09,844.0"
+England Total,2017.0,Transport Total,"1,10,013.5"
+England Total,2018.0,Transport Total,"1,08,586.2"
+England Total,2019.0,Transport Total,"1,07,228.0"
+England Total,2020.0,Transport Total,"87,549.5"
+England Total,2021.0,Transport Total,"94,657.5"
+England Total,2022.0,Transport Total,"95,108.2"
+Wales Total,2005.0,Transport Total,"6,938.4"
+Wales Total,2006.0,Transport Total,"6,953.0"
+Wales Total,2007.0,Transport Total,"7,060.0"
+Wales Total,2008.0,Transport Total,"6,846.5"
+Wales Total,2009.0,Transport Total,"6,615.1"
+Wales Total,2010.0,Transport Total,"6,518.4"
+Wales Total,2011.0,Transport Total,"6,401.7"
+Wales Total,2012.0,Transport Total,"6,327.2"
+Wales Total,2013.0,Transport Total,"6,284.7"
+Wales Total,2014.0,Transport Total,"6,392.7"
+Wales Total,2015.0,Transport Total,"6,537.9"
+Wales Total,2016.0,Transport Total,"6,745.2"
+Wales Total,2017.0,Transport Total,"6,683.9"
+Wales Total,2018.0,Transport Total,"6,683.8"
+Wales Total,2019.0,Transport Total,"6,585.9"
+Wales Total,2020.0,Transport Total,"5,183.7"
+Wales Total,2021.0,Transport Total,"5,795.0"
+Wales Total,2022.0,Transport Total,"5,887.2"
+Scotland Total,2005.0,Transport Total,"11,570.3"
+Scotland Total,2006.0,Transport Total,"11,576.2"
+Scotland Total,2007.0,Transport Total,"11,716.1"
+Scotland Total,2008.0,Transport Total,"11,391.9"
+Scotland Total,2009.0,Transport Total,"11,066.0"
+Scotland Total,2010.0,Transport Total,"10,857.8"
+Scotland Total,2011.0,Transport Total,"10,565.4"
+Scotland Total,2012.0,Transport Total,"10,450.5"
+Scotland Total,2013.0,Transport Total,"10,315.7"
+Scotland Total,2014.0,Transport Total,"10,392.3"
+Scotland Total,2015.0,Transport Total,"10,518.7"
+Scotland Total,2016.0,Transport Total,"10,765.8"
+Scotland Total,2017.0,Transport Total,"10,910.0"
+Scotland Total,2018.0,Transport Total,"10,688.7"
+Scotland Total,2019.0,Transport Total,"10,477.4"
+Scotland Total,2020.0,Transport Total,"8,279.2"
+Scotland Total,2021.0,Transport Total,"9,855.5"
+Scotland Total,2022.0,Transport Total,"10,041.7"
+Northern Ireland Total,2005.0,Transport Total,"4,582.0"
+Northern Ireland Total,2006.0,Transport Total,"4,581.3"
+Northern Ireland Total,2007.0,Transport Total,"4,630.1"
+Northern Ireland Total,2008.0,Transport Total,"4,515.5"
+Northern Ireland Total,2009.0,Transport Total,"4,448.5"
+Northern Ireland Total,2010.0,Transport Total,"4,353.3"
+Northern Ireland Total,2011.0,Transport Total,"4,227.5"
+Northern Ireland Total,2012.0,Transport Total,"4,143.2"
+Northern Ireland Total,2013.0,Transport Total,"4,067.3"
+Northern Ireland Total,2014.0,Transport Total,"4,010.5"
+Northern Ireland Total,2015.0,Transport Total,"3,976.0"
+Northern Ireland Total,2016.0,Transport Total,"3,992.9"
+Northern Ireland Total,2017.0,Transport Total,"3,994.3"
+Northern Ireland Total,2018.0,Transport Total,"3,936.9"
+Northern Ireland Total,2019.0,Transport Total,"3,851.8"
+Northern Ireland Total,2020.0,Transport Total,"3,351.8"
+Northern Ireland Total,2021.0,Transport Total,"3,705.5"
+Northern Ireland Total,2022.0,Transport Total,"3,619.3"
+,,Transport Total,
+Yorkshire and the Humber Total,2005.0,Agriculture Total,"3,918.7"
+Yorkshire and the Humber Total,2006.0,Agriculture Total,"3,858.6"
+Yorkshire and the Humber Total,2007.0,Agriculture Total,"3,780.4"
+Yorkshire and the Humber Total,2008.0,Agriculture Total,"3,763.8"
+Yorkshire and the Humber Total,2009.0,Agriculture Total,"3,625.6"
+Yorkshire and the Humber Total,2010.0,Agriculture Total,"3,719.9"
+Yorkshire and the Humber Total,2011.0,Agriculture Total,"3,627.0"
+Yorkshire and the Humber Total,2012.0,Agriculture Total,"3,702.3"
+Yorkshire and the Humber Total,2013.0,Agriculture Total,"3,591.9"
+Yorkshire and the Humber Total,2014.0,Agriculture Total,"3,645.8"
+Yorkshire and the Humber Total,2015.0,Agriculture Total,"3,673.7"
+Yorkshire and the Humber Total,2016.0,Agriculture Total,"3,583.9"
+Yorkshire and the Humber Total,2017.0,Agriculture Total,"3,700.6"
+Yorkshire and the Humber Total,2018.0,Agriculture Total,"3,621.3"
+Yorkshire and the Humber Total,2019.0,Agriculture Total,"3,605.0"
+Yorkshire and the Humber Total,2020.0,Agriculture Total,"3,469.6"
+Yorkshire and the Humber Total,2021.0,Agriculture Total,"3,562.4"
+Yorkshire and the Humber Total,2022.0,Agriculture Total,"3,442.2"
+London Total,2005.0,Agriculture Total,78.8
+London Total,2006.0,Agriculture Total,78.8
+London Total,2007.0,Agriculture Total,72.9
+London Total,2008.0,Agriculture Total,73.8
+London Total,2009.0,Agriculture Total,66.1
+London Total,2010.0,Agriculture Total,70.5
+London Total,2011.0,Agriculture Total,64.5
+London Total,2012.0,Agriculture Total,70.3
+London Total,2013.0,Agriculture Total,77.0
+London Total,2014.0,Agriculture Total,61.5
+London Total,2015.0,Agriculture Total,62.9
+London Total,2016.0,Agriculture Total,61.2
+London Total,2017.0,Agriculture Total,62.3
+London Total,2018.0,Agriculture Total,52.7
+London Total,2019.0,Agriculture Total,51.0
+London Total,2020.0,Agriculture Total,48.2
+London Total,2021.0,Agriculture Total,54.3
+London Total,2022.0,Agriculture Total,61.5
+England Total,2005.0,Agriculture Total,"35,104.6"
+England Total,2006.0,Agriculture Total,"34,585.8"
+England Total,2007.0,Agriculture Total,"34,189.7"
+England Total,2008.0,Agriculture Total,"34,441.4"
+England Total,2009.0,Agriculture Total,"33,338.4"
+England Total,2010.0,Agriculture Total,"33,449.0"
+England Total,2011.0,Agriculture Total,"32,698.2"
+England Total,2012.0,Agriculture Total,"33,107.7"
+England Total,2013.0,Agriculture Total,"32,404.2"
+England Total,2014.0,Agriculture Total,"32,853.2"
+England Total,2015.0,Agriculture Total,"33,051.1"
+England Total,2016.0,Agriculture Total,"32,298.6"
+England Total,2017.0,Agriculture Total,"32,780.5"
+England Total,2018.0,Agriculture Total,"32,278.0"
+England Total,2019.0,Agriculture Total,"32,023.2"
+England Total,2020.0,Agriculture Total,"31,154.2"
+England Total,2021.0,Agriculture Total,"31,513.3"
+England Total,2022.0,Agriculture Total,"30,609.2"
+Wales Total,2005.0,Agriculture Total,"6,146.0"
+Wales Total,2006.0,Agriculture Total,"6,021.8"
+Wales Total,2007.0,Agriculture Total,"5,848.1"
+Wales Total,2008.0,Agriculture Total,"5,697.8"
+Wales Total,2009.0,Agriculture Total,"5,637.9"
+Wales Total,2010.0,Agriculture Total,"5,705.2"
+Wales Total,2011.0,Agriculture Total,"5,556.0"
+Wales Total,2012.0,Agriculture Total,"5,742.1"
+Wales Total,2013.0,Agriculture Total,"5,580.0"
+Wales Total,2014.0,Agriculture Total,"5,903.4"
+Wales Total,2015.0,Agriculture Total,"5,868.6"
+Wales Total,2016.0,Agriculture Total,"5,620.0"
+Wales Total,2017.0,Agriculture Total,"5,641.1"
+Wales Total,2018.0,Agriculture Total,"5,490.2"
+Wales Total,2019.0,Agriculture Total,"5,465.2"
+Wales Total,2020.0,Agriculture Total,"5,361.4"
+Wales Total,2021.0,Agriculture Total,"5,574.8"
+Wales Total,2022.0,Agriculture Total,"5,457.0"
+Scotland Total,2005.0,Agriculture Total,"8,649.6"
+Scotland Total,2006.0,Agriculture Total,"8,449.3"
+Scotland Total,2007.0,Agriculture Total,"8,532.7"
+Scotland Total,2008.0,Agriculture Total,"8,377.6"
+Scotland Total,2009.0,Agriculture Total,"8,352.7"
+Scotland Total,2010.0,Agriculture Total,"8,301.3"
+Scotland Total,2011.0,Agriculture Total,"8,007.5"
+Scotland Total,2012.0,Agriculture Total,"8,189.5"
+Scotland Total,2013.0,Agriculture Total,"7,845.5"
+Scotland Total,2014.0,Agriculture Total,"8,039.3"
+Scotland Total,2015.0,Agriculture Total,"8,033.5"
+Scotland Total,2016.0,Agriculture Total,"7,978.3"
+Scotland Total,2017.0,Agriculture Total,"7,882.9"
+Scotland Total,2018.0,Agriculture Total,"7,742.7"
+Scotland Total,2019.0,Agriculture Total,"7,717.5"
+Scotland Total,2020.0,Agriculture Total,"7,702.6"
+Scotland Total,2021.0,Agriculture Total,"7,836.5"
+Scotland Total,2022.0,Agriculture Total,"7,636.4"
+Northern Ireland Total,2005.0,Agriculture Total,"5,625.3"
+Northern Ireland Total,2006.0,Agriculture Total,"5,534.8"
+Northern Ireland Total,2007.0,Agriculture Total,"5,478.0"
+Northern Ireland Total,2008.0,Agriculture Total,"5,375.3"
+Northern Ireland Total,2009.0,Agriculture Total,"5,362.6"
+Northern Ireland Total,2010.0,Agriculture Total,"5,395.4"
+Northern Ireland Total,2011.0,Agriculture Total,"5,379.6"
+Northern Ireland Total,2012.0,Agriculture Total,"5,535.2"
+Northern Ireland Total,2013.0,Agriculture Total,"5,408.1"
+Northern Ireland Total,2014.0,Agriculture Total,"5,495.5"
+Northern Ireland Total,2015.0,Agriculture Total,"5,628.5"
+Northern Ireland Total,2016.0,Agriculture Total,"5,727.9"
+Northern Ireland Total,2017.0,Agriculture Total,"5,759.9"
+Northern Ireland Total,2018.0,Agriculture Total,"5,719.7"
+Northern Ireland Total,2019.0,Agriculture Total,"5,677.6"
+Northern Ireland Total,2020.0,Agriculture Total,"5,798.5"
+Northern Ireland Total,2021.0,Agriculture Total,"6,011.2"
+Northern Ireland Total,2022.0,Agriculture Total,"5,878.9"
+,,Agriculture Total,
+Yorkshire and the Humber Total,2005.0,Per Capita Emissions (tCO2e),12.0
+Yorkshire and the Humber Total,2006.0,Per Capita Emissions (tCO2e),11.7
+Yorkshire and the Humber Total,2007.0,Per Capita Emissions (tCO2e),11.4
+Yorkshire and the Humber Total,2008.0,Per Capita Emissions (tCO2e),10.9
+Yorkshire and the Humber Total,2009.0,Per Capita Emissions (tCO2e),9.6
+Yorkshire and the Humber Total,2010.0,Per Capita Emissions (tCO2e),10.2
+Yorkshire and the Humber Total,2011.0,Per Capita Emissions (tCO2e),9.5
+Yorkshire and the Humber Total,2012.0,Per Capita Emissions (tCO2e),9.4
+Yorkshire and the Humber Total,2013.0,Per Capita Emissions (tCO2e),9.3
+Yorkshire and the Humber Total,2014.0,Per Capita Emissions (tCO2e),8.5
+Yorkshire and the Humber Total,2015.0,Per Capita Emissions (tCO2e),8.5
+Yorkshire and the Humber Total,2016.0,Per Capita Emissions (tCO2e),7.9
+Yorkshire and the Humber Total,2017.0,Per Capita Emissions (tCO2e),7.7
+Yorkshire and the Humber Total,2018.0,Per Capita Emissions (tCO2e),7.7
+Yorkshire and the Humber Total,2019.0,Per Capita Emissions (tCO2e),7.4
+Yorkshire and the Humber Total,2020.0,Per Capita Emissions (tCO2e),6.7
+Yorkshire and the Humber Total,2021.0,Per Capita Emissions (tCO2e),7.1
+Yorkshire and the Humber Total,2022.0,Per Capita Emissions (tCO2e),6.4
+London Total,2005.0,Per Capita Emissions (tCO2e),7.1
+London Total,2006.0,Per Capita Emissions (tCO2e),7.1
+London Total,2007.0,Per Capita Emissions (tCO2e),6.8
+London Total,2008.0,Per Capita Emissions (tCO2e),6.7
+London Total,2009.0,Per Capita Emissions (tCO2e),6.1
+London Total,2010.0,Per Capita Emissions (tCO2e),6.3
+London Total,2011.0,Per Capita Emissions (tCO2e),5.6
+London Total,2012.0,Per Capita Emissions (tCO2e),5.8
+London Total,2013.0,Per Capita Emissions (tCO2e),5.5
+London Total,2014.0,Per Capita Emissions (tCO2e),4.9
+London Total,2015.0,Per Capita Emissions (tCO2e),4.6
+London Total,2016.0,Per Capita Emissions (tCO2e),4.2
+London Total,2017.0,Per Capita Emissions (tCO2e),4.0
+London Total,2018.0,Per Capita Emissions (tCO2e),3.9
+London Total,2019.0,Per Capita Emissions (tCO2e),3.7
+London Total,2020.0,Per Capita Emissions (tCO2e),3.2
+London Total,2021.0,Per Capita Emissions (tCO2e),3.5
+London Total,2022.0,Per Capita Emissions (tCO2e),3.2
+England Total,2005.0,Per Capita Emissions (tCO2e),10.1
+England Total,2006.0,Per Capita Emissions (tCO2e),9.9
+England Total,2007.0,Per Capita Emissions (tCO2e),9.6
+England Total,2008.0,Per Capita Emissions (tCO2e),9.2
+England Total,2009.0,Per Capita Emissions (tCO2e),8.4
+England Total,2010.0,Per Capita Emissions (tCO2e),8.5
+England Total,2011.0,Per Capita Emissions (tCO2e),7.8
+England Total,2012.0,Per Capita Emissions (tCO2e),8.0
+England Total,2013.0,Per Capita Emissions (tCO2e),7.8
+England Total,2014.0,Per Capita Emissions (tCO2e),7.1
+England Total,2015.0,Per Capita Emissions (tCO2e),6.8
+England Total,2016.0,Per Capita Emissions (tCO2e),6.3
+England Total,2017.0,Per Capita Emissions (tCO2e),6.1
+England Total,2018.0,Per Capita Emissions (tCO2e),6.0
+England Total,2019.0,Per Capita Emissions (tCO2e),5.8
+England Total,2020.0,Per Capita Emissions (tCO2e),5.2
+England Total,2021.0,Per Capita Emissions (tCO2e),5.4
+England Total,2022.0,Per Capita Emissions (tCO2e),5.1
+Wales Total,2005.0,Per Capita Emissions (tCO2e),15.0
+Wales Total,2006.0,Per Capita Emissions (tCO2e),14.9
+Wales Total,2007.0,Per Capita Emissions (tCO2e),14.4
+Wales Total,2008.0,Per Capita Emissions (tCO2e),13.7
+Wales Total,2009.0,Per Capita Emissions (tCO2e),12.1
+Wales Total,2010.0,Per Capita Emissions (tCO2e),13.0
+Wales Total,2011.0,Per Capita Emissions (tCO2e),11.5
+Wales Total,2012.0,Per Capita Emissions (tCO2e),11.3
+Wales Total,2013.0,Per Capita Emissions (tCO2e),12.1
+Wales Total,2014.0,Per Capita Emissions (tCO2e),11.6
+Wales Total,2015.0,Per Capita Emissions (tCO2e),11.0
+Wales Total,2016.0,Per Capita Emissions (tCO2e),10.2
+Wales Total,2017.0,Per Capita Emissions (tCO2e),10.1
+Wales Total,2018.0,Per Capita Emissions (tCO2e),9.7
+Wales Total,2019.0,Per Capita Emissions (tCO2e),9.6
+Wales Total,2020.0,Per Capita Emissions (tCO2e),8.8
+Wales Total,2021.0,Per Capita Emissions (tCO2e),9.2
+Wales Total,2022.0,Per Capita Emissions (tCO2e),8.6
+Scotland Total,2005.0,Per Capita Emissions (tCO2e),12.2
+Scotland Total,2006.0,Per Capita Emissions (tCO2e),12.0
+Scotland Total,2007.0,Per Capita Emissions (tCO2e),11.7
+Scotland Total,2008.0,Per Capita Emissions (tCO2e),11.3
+Scotland Total,2009.0,Per Capita Emissions (tCO2e),10.4
+Scotland Total,2010.0,Per Capita Emissions (tCO2e),10.6
+Scotland Total,2011.0,Per Capita Emissions (tCO2e),9.8
+Scotland Total,2012.0,Per Capita Emissions (tCO2e),9.9
+Scotland Total,2013.0,Per Capita Emissions (tCO2e),9.5
+Scotland Total,2014.0,Per Capita Emissions (tCO2e),8.7
+Scotland Total,2015.0,Per Capita Emissions (tCO2e),8.7
+Scotland Total,2016.0,Per Capita Emissions (tCO2e),8.1
+Scotland Total,2017.0,Per Capita Emissions (tCO2e),8.0
+Scotland Total,2018.0,Per Capita Emissions (tCO2e),7.9
+Scotland Total,2019.0,Per Capita Emissions (tCO2e),7.7
+Scotland Total,2020.0,Per Capita Emissions (tCO2e),6.9
+Scotland Total,2021.0,Per Capita Emissions (tCO2e),7.3
+Scotland Total,2022.0,Per Capita Emissions (tCO2e),7.1
+Northern Ireland Total,2005.0,Per Capita Emissions (tCO2e),14.5
+Northern Ireland Total,2006.0,Per Capita Emissions (tCO2e),14.6
+Northern Ireland Total,2007.0,Per Capita Emissions (tCO2e),14.4
+Northern Ireland Total,2008.0,Per Capita Emissions (tCO2e),14.0
+Northern Ireland Total,2009.0,Per Capita Emissions (tCO2e),13.1
+Northern Ireland Total,2010.0,Per Capita Emissions (tCO2e),13.2
+Northern Ireland Total,2011.0,Per Capita Emissions (tCO2e),12.4
+Northern Ireland Total,2012.0,Per Capita Emissions (tCO2e),12.5
+Northern Ireland Total,2013.0,Per Capita Emissions (tCO2e),12.2
+Northern Ireland Total,2014.0,Per Capita Emissions (tCO2e),11.6
+Northern Ireland Total,2015.0,Per Capita Emissions (tCO2e),11.4
+Northern Ireland Total,2016.0,Per Capita Emissions (tCO2e),11.0
+Northern Ireland Total,2017.0,Per Capita Emissions (tCO2e),10.7
+Northern Ireland Total,2018.0,Per Capita Emissions (tCO2e),10.6
+Northern Ireland Total,2019.0,Per Capita Emissions (tCO2e),10.3
+Northern Ireland Total,2020.0,Per Capita Emissions (tCO2e),9.8
+Northern Ireland Total,2021.0,Per Capita Emissions (tCO2e),10.2
+Northern Ireland Total,2022.0,Per Capita Emissions (tCO2e),9.8
+,,Per Capita Emissions (tCO2e),
