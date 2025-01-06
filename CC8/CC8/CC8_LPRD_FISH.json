@@ -1,0 +1,95 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "values": [
+        {
+          "description": "CANNED FISH, TUNA, 130G-200G",
+          "price": 0.9
+        },
+        {
+          "description": "FISH & CHIPS TAKEAWAY",
+          "price": 9.8
+        },
+        {
+          "description": "FRESH FISH-SALMON FILLETS-KG",
+          "price": 20.19
+        },
+        {
+          "description": "FRESH WHITE FISH FILLETS KG",
+          "price": 19.79
+        },
+        {
+          "description": "FROZEN FISH FINGERS 8-12 PK",
+          "price": 3.0
+        }
+      ]
+    },
+    "title": {
+      "text": "Fish prices",
+      "subtitle": ["Mean price, September 2024", "Source: Davies (2024)"],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 16,
+      "anchor": "start",
+      "color": "black",
+      "font": "Trebuchet MS",
+      "fontSize":20
+    },
+    "params": [
+      {
+        "name": "highlight",
+        "select": {
+          "type": "point",
+          "on": "mouseover"
+        }
+      }
+    ],
+    "mark": {
+      "type": "bar"
+    },
+    "height": 150,
+    "width": 250,
+    "encoding": {
+      "x": {
+        "field": "price",
+        "type": "quantitative",
+        "aggregate": "mean",
+        "title": "Price (£)",
+        "axis": {"labelFont": "Trebuchet MS", "titleFont": "Trebuchet MS",  "labelFontSize":16,
+        "titleFontSize":18}
+      },
+      "y": {
+        "field": "description",
+        "type": "nominal",
+        "title": "Product",
+        "axis": {"labelFont": "Trebuchet MS", "titleFont": "Trebuchet MS", "labelFontSize":16,
+        "titleFontSize":18}
+      },
+      "color": {
+        "field": "price",
+        "type": "quantitative",
+        "scale": {
+          "scheme": "blues"
+        },
+        "legend": {
+          "title": "Price (£)",
+          "titleFont": "Trebuchet MS",
+          "labelFont": "Trebuchet MS"
+        }
+      },
+      "fillOpacity": {
+        "condition": {"param": "highlight", "value": 1},
+        "value": 0.6
+      },
+      "tooltip": [
+        {
+          "field": "description",
+          "title": "Product"
+        },
+        {
+          "field": "price",
+          "title": "Price (£)"
+        }
+      ]
+    }
+  }
+  
