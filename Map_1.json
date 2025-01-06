@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 300,
+  "height": 300,
+  "background": "#F4F6F9",
+  "data": {
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/CC7/India_map.json",
+    "format": {"property": "features"}
+  },
+  "title": {
+    "text": "States of India",
+    "fontSize": 16,
+    "font": "Trebuchet MS",
+    "align": "center",
+    "anchor": "middle",
+    "fontWeight": "bold"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "properties.NAME_1",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+            "scheme": "tableau20"
+          }
+    },
+    
+    "tooltip": [
+      {
+        "field": "properties.NAME_1", 
+        "title": "State"
+      }
+    ]
+  }
+}
