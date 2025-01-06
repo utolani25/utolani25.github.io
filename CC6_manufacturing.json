@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Average Weekly Earnings in Manufacturing", 
+    "fontSize": 14,
+    "font": "Trebuchet MS",
+    "anchor": "start",
+    "color": "darkblue"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/CC6/K55I.json",
+    "format": {
+      "type": "json",
+      "property": "years"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "color": "deeppink", 
+    "strokeWidth": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Year",
+      "scale": {
+        "domain": ["2000", "2024"],
+        "nice": "year"
+      },
+      "axis": {
+        "labelFontSize": 11,
+        "titleFontSize": 11,
+        "titleColor": "darkblue",
+        "labelColor": "cadetblue",
+        "gridColor": "white",
+        "labelAngle": 45
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Average Weekly Earnings (£)",
+      "axis": {
+        "labelFontSize": 11,
+        "titleFontSize": 11,
+        "titleColor": "darkblue",
+        "labelColor": "cadetblue",
+        "gridColor": "whites"
+      }
+    },
+    "tooltip": [
+      {"field": "date", "type": "temporal", "title":"Date"},
+      {"field": "value", "type": "quantitative", "title":"Average Weekly Earnings (£)"}
+    ]
+  },
+  "width": 200,
+  "height": 200,
+  "config": {
+    "background": "#F4F6F9", 
+    "axis": {
+      "grid": true
+    }
+  }
+}
