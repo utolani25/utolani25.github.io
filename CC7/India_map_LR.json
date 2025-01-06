@@ -4,15 +4,15 @@
   "height": 300,
   "background": "#F4F6F9",
   "data": {
-    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/India_map.json",
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/CC7/India_map.json",
     "format": {"property": "features"}
   },
    "title": {
-      "text": "Literacy Rates, India",
-      "fontSize": 16,
-      "font": "Arial",
+      "text": "Literacy Rates of India",
+      "fontSize": 20,
+      "font": "Trebuchet MS",
       "align": "center",
-      "anchor": "middle",
+      "anchor": "start",
       "fontWeight": "bold"
     },
   "transform": [
@@ -76,4 +76,3 @@
     ]
   }
 }
-
