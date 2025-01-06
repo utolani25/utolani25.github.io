@@ -15,7 +15,7 @@
   "width": 400,
   "height": 300,
   "data": {
-    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/CC4/CC4_Data.csv",
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/CC4_Data.csv",
     "format": {"type": "csv"}
   },
   "mark": "bar",
