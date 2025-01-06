@@ -1,0 +1,121 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/CC3/export_uk_wb.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+
+  "title": {
+    "text": "Exports of Goods and Services (% of GDP)",
+    "subtitle": "United Kingdom (2000–2023)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 16,
+    "fontSize":20,
+    "anchor": "start",
+    "color": "black",
+    "font": "Trebuchet MS"
+  },
+
+"width": 400,
+  "height": 300,
+  "mark": {
+    "type": "line",
+    "color": "navy"
+  },
+
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {
+        "labelFont": "Trebuchet MS",
+        "titleFont": "Trebuchet MS",
+        "titleFontSize":18,
+        "labelFontSize":16,
+        "grid": false
+      }
+    }
+  },
+
+  "layer": [
+    {
+      "encoding": {
+        "y": {
+          "field": "Exports of goods and services (% of GDP)",
+          "type": "quantitative",
+          "title": "Exports (% of GDP)",
+          "axis": {
+            "labelFont": "Trebuchet MS",
+            "titleFont": "Trebuchet MS",
+            "titleFontSize":18,
+        "labelFontSize":16,
+            "grid": false
+          }
+        }
+      },
+
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "align": false,
+            "interpolate": "basis",
+            "color": "red"
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {"selection": "hover"}
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "size": 150,
+            "color": "red"
+          }
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0,
+            "selection": "hover"
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Year",
+            "type": "temporal",
+            "format": "%b-%Y",
+            "title": "Year"
+          },
+          {
+            "field": "Exports of goods and services (% of GDP)",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Exports (% of GDP)"
+          }
+        ]
+      },
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["Date"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        }
+      }
+    }
+  ]
+}

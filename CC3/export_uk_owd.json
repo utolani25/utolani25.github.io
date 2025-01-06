@@ -1,0 +1,121 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "Share of Services in Total Exports",
+    "subtitle": "United Kingdom (%)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 16,
+    "fontSize":20,
+    "anchor": "start",
+    "color": "black",
+    "font": "Trebuchet MS"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/CC3/Export_UK_OWD.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+
+  "width": 400,
+  "height": 300,
+  "mark": {
+    "type": "line",
+    "color": "navy"
+  },
+
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {
+        "labelFont": "Trebuchet MS",
+        "titleFont": "Trebuchet MS",
+        "titleFontSize":18,
+        "labelFontSize":16,
+        "grid": false
+      }
+    }
+  },
+
+  "layer": [
+    {
+      "encoding": {
+        "y": {
+          "field": "Share of services in total goods and services exports",
+          "type": "quantitative",
+          "title": "Share of Services (%)",
+          "axis": {
+            "labelFont": "Trebuchet MS",
+            "titleFont": "Trebuchet MS",
+            "titleFontSize":18,
+        "labelFontSize":16,
+            "grid": false
+          }
+        }
+      },
+
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "align": false,
+            "interpolate": "basis",
+            "color": "navy"
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {"selection": "hover"}
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "size": 150,
+            "color": "navy"
+          }
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0,
+            "selection": "hover"
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Year",
+            "type": "temporal",
+            "format": "%b-%Y",
+            "title": "Year"
+          },
+          {
+            "field": "Share of services in total goods and services exports",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "Share of services (%)"
+          }
+        ]
+      },
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["Date"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        }
+      }
+    }
+  ]
+}
