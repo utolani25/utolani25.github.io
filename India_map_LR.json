@@ -9,10 +9,10 @@
   },
    "title": {
       "text": "Literacy Rates, India",
-      "fontSize": 16,
+      "fontSize": 20,
       "font": "Trebuchet MS",
       "align": "center",
-      "anchor": "middle",
+      "anchor": "start",
       "fontWeight": "bold"
     },
   "transform": [
