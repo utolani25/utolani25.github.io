@@ -4,16 +4,18 @@
     "text": "Behind the Screens",
     "subtitle": "A Deep Dive into book my show's Revenue Streams",
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 13,
+    "subtitleFontSize": 16,
+    "fontSize":20,
     "anchor": "start",
     "color": "red",
     "fontWeight": "bold",
-    "subtitleFontWeight": "bold"
+    "subtitleFontWeight": "bold",
+    "font": "Trebuchet MS"
   },
-  "width": 300,
+  "width": 400,
   "height": 300,
   "data": {
-    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/bad_chart_data.csv",
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/CC4/CC4_Data.csv",
     "format": {"type": "csv"}
   },
   "mark": "bar",
@@ -22,20 +24,32 @@
       "field": "Amount (in Cr)",
       "type": "quantitative",
       "title": "Amount (in Crores)",
-      "axis": {"grid": false}
+      "axis": {
+        "grid": false,
+        "labelFont": "Trebuchet MS",
+        "titleFont": "Trebuchet MS",
+        "titleFontSize":18,
+        "labelFontSize":16
+
+      }
     },
     "y": {
       "field": "Revenue Streams",
       "type": "nominal",
       "title": "Revenue Streams",
-      "sort": "-x"
+      "sort": "-x",
+      "axis": {
+        "labelFont": "Trebuchet MS",
+        "titleFont": "Trebuchet MS",
+        "titleFontSize":18,
+        "labelFontSize":16
+      }
     },
     "color": {
       "field": "Revenue Streams",
       "type": "nominal",
       "scale": {
         "scheme": "reds"
-
       },
       "legend": null
     },
@@ -47,7 +61,9 @@
   "config": {
     "axis": {
       "labelFontSize": 12,
-      "titleFontSize": 14
+      "titleFontSize": 14,
+      "labelFont": "Trebuchet MS",
+      "titleFont": "Trebuchet MS"
     },
     "bar": {
       "cornerRadius": 3
