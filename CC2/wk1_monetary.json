@@ -81,8 +81,8 @@
       "fontSize": 16,
       "anchor": "start"
     },
-    "width": "container",
-    "height": 350,
+    "width": 400,
+    "height": 200,
     "mark": "area",
     "encoding": {
       "x": {
