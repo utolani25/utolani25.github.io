@@ -13,7 +13,7 @@
   },
 
   "data": {
-    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/CC5/CC5_Data.csv",
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/CC5_Data.csv",
     "format": {
       "type": "csv"
     }
