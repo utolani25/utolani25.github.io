@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "data": {
-    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/CC3/export_uk_wb.csv",
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/export_uk_wb.csv",
     "format": {
       "type": "csv"
     }
