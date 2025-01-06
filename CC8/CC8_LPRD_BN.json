@@ -1,0 +1,134 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Line chart showing monthly median price for bananas in the UK.",
+    "data": {
+      "values": [
+        {"year_month": "2023-06", "cpi_name": "bananas-per kg", "price": 1.05, "start_price": 1.05, "price_index": 100.0},
+        {"year_month": "2023-07", "cpi_name": "bananas-per kg", "price": 1.35, "start_price": 1.05, "price_index": 128.57142857142858},
+        {"year_month": "2023-08", "cpi_name": "bananas-per kg", "price": 1.35, "start_price": 1.05, "price_index": 128.57142857142858},
+        {"year_month": "2023-09", "cpi_name": "bananas-per kg", "price": 1.35, "start_price": 1.05, "price_index": 128.57142857142858},
+        {"year_month": "2023-10", "cpi_name": "bananas-per kg", "price": 1.35, "start_price": 1.05, "price_index": 128.57142857142858},
+        {"year_month": "2023-11", "cpi_name": "bananas-per kg", "price": 1.5, "start_price": 1.05, "price_index": 142.85714285714286},
+        {"year_month": "2023-12", "cpi_name": "bananas-per kg", "price": 1.35, "start_price": 1.05, "price_index": 128.57142857142858},
+        {"year_month": "2024-01", "cpi_name": "bananas-per kg", "price": 1.5, "start_price": 1.05, "price_index": 142.85714285714286},
+        {"year_month": "2024-02", "cpi_name": "bananas-per kg", "price": 1.5, "start_price": 1.05, "price_index": 142.85714285714286},
+        {"year_month": "2024-03", "cpi_name": "bananas-per kg", "price": 1.5, "start_price": 1.05, "price_index": 142.85714285714286},
+        {"year_month": "2024-04", "cpi_name": "bananas-per kg", "price": 1.55, "start_price": 1.05, "price_index": 147.61904761904762},
+        {"year_month": "2024-05", "cpi_name": "bananas-per kg", "price": 1.55, "start_price": 1.05, "price_index": 147.61904761904762},
+        {"year_month": "2024-06", "cpi_name": "bananas-per kg", "price": 1.55, "start_price": 1.05, "price_index": 147.61904761904762},
+        {"year_month": "2024-07", "cpi_name": "bananas-per kg", "price": 1.6, "start_price": 1.05, "price_index": 152.38095238095238},
+        {"year_month": "2024-08", "cpi_name": "bananas-per kg", "price": 1.6, "start_price": 1.05, "price_index": 152.38095238095238},
+        {"year_month": "2024-09", "cpi_name": "bananas-per kg", "price": 1.65, "start_price": 1.05, "price_index": 157.1428571428571},
+        {"year_month": "2024-10", "cpi_name": "bananas-per kg", "price": 1.35, "start_price": 1.05, "price_index": 128.57142857142858},
+        {"year_month": "2024-11", "cpi_name": "bananas-per kg", "price": 1.5, "start_price": 1.05, "price_index": 142.85714285714286}
+      ]
+    },
+    "title": {
+      "text": "Monthly Median Price for Bananas in the UK",
+      "font": "Trebuchet MS",
+      "anchor": "start",
+      "fontSize": 20
+    },
+    "mark": {
+      "type": "trail",
+      "color": "#B8860B", 
+      "strokeWidth": 2
+    },
+    "height": 300,
+    "width": 400,
+      "encoding": {
+        "x": {
+          "field": "year_month",
+          "type": "temporal",
+          "title": "Month",
+          "axis": {
+            "format": "%Y-%m",
+            "labelFont": "Trebuchet MS",
+            "titleFont": "Trebuchet MS",
+            "titleFontSize":18,
+            "labelFontSize":16,
+            "grid": false,
+            "labelAngle": 45  
+          }
+        }
+      },
+      "layer": [
+    {
+      "encoding": {
+        "y": {
+          "field": "price_index",
+          "type": "quantitative",
+          "scale": {"zero": false},
+          "title": "Median Price (£)",
+          "axis": {
+            "labelFont": "Trebuchet MS",
+            "titleFont": "Trebuchet MS",
+            "titleFontSize":18,
+        "labelFontSize":16,
+            "grid": false
+          }
+        }
+      },
+
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "align": false,
+            "interpolate": "basis",
+            "color": "goldenrod"
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {"selection": "hover"}
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "size": 150,
+            "color": "goldenrod"
+          }
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0,
+            "selection": "hover"
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "year_month",
+            "type": "temporal",
+            "format": "%b-%Y",
+            "title": "Month"
+          },
+          {
+            "field": "price_index",
+            "type": "quantitative",
+            "title": "Median Price (£)"
+          }
+        ]
+      },
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["Date"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        }
+      }
+    }
+  ]
+}
+
+  
