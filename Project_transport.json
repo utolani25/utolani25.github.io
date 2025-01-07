@@ -10,6 +10,8 @@
     "anchor": "start",
     "color": "rgb(33, 37, 41)"
   },
+   "width":600,
+  "height":400,
   "config": {
     "background": "white",
     "view": {
