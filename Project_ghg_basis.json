@@ -29,14 +29,87 @@
     },
     "color": {
       "field": "Sector",
-      "legend": {"labelFont": "Trebuchet MS", "titleFont": "Trebuchet MS"}
+      "legend": {"labelFont": "Trebuchet MS", "titleFont": "Trebuchet MS"},
+      "scale": {"scheme": "goldgreen"}
     },
     "tooltip": [
-      {"field": "year", "type": "temporal", "title": "Year"},
       {"field": "GHG_Emissions", "type": "quantitative", "title": "GHG Emissions"},
       {"field": "Sector", "type": "nominal", "title": "Sector"}
+
     ]
   },
+   "layer": [
+    {
+      "encoding": {
+        "color": {"field": "Sector", "type": "nominal"},
+        "y": {"field": "GHG_Emissions", "type": "quantitative"}
+      },
+      "layer": [
+        {"mark": "line"},
+        {
+          "params": [
+            {
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "fields": ["year"],
+                "nearest": true,
+                "on": "pointerover",
+                "clear": "pointerout"
+              }
+            }
+          ],
+          "mark": "point",
+          "encoding": {
+            "opacity": {
+              "condition": {"param": "hover", "empty": false, "value": 1},
+              "value": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "transform": [{"filter": {"param": "hover", "empty": false}}],
+      "layer": [
+        {
+          "mark": {"type": "rule", "color": "gray"},
+          "encoding": {
+            "x": {"type": "temporal", "field": "year", "aggregate": "min"}
+          }
+        },
+        {
+          "encoding": {
+            "text": {
+              "field": "GHG_Emissions",
+              "type": "quantitative"
+            },
+            "x": {"type": "temporal", "field": "year"},
+            "y": {
+              "type": "quantitative",
+              "field": "GHG_Emissions"
+            }
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "stroke": "white",
+                "strokeWidth": 2,
+                "align": "left",
+                "dx": 5,
+                "dy": -5
+              }
+            },
+            {
+              "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+              "encoding": {"color": {"type": "nominal", "field": "Sector"}}
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "config": {
     "font": "Trebuchet MS"
   }
