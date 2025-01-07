@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "UK Greenhouse Gas Emissions, by region, by gas",
+    "subtitle": [
+      "Territorial greenhouse gas emissions by gas (MtCO2e)",
+      "Source: ONS"
+    ],
+    "font": "Trebuchet MS",
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "rgb(33, 37, 41)"
+  },
+
+  "width": 600,
+  "height": 400,
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/Project_ghg_type.csv"
+  },
+
+  "transform": [
+    {
+      "fold": [
+        "Net CO2 emissions (emissions minus removals)", 
+        "Methane (CH4)", 
+        "Nitrous oxide (N2O)", 
+        "Hydrofluorocarbons (HFC)", 
+        "Perfluorocarbons (PFC)", 
+        "Sulphur hexafluoride (SF6)"
+      ],
+      "as": ["gas_type", "value"]
+    }
+  ],
+
+  "mark": {
+    "type": "area",
+    "opacity": 0.6
+  },
+
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {
+        "grid": false,
+        "labelFont": "Trebuchet MS",
+        "titleFont": "Trebuchet MS",
+        "labelFontSize": 12,
+        "titleFontSize": 14,
+        "tickCount": 6
+      }
+    },
+
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Emissions (in Mt CO2 equivalent)",
+      "axis": {
+        "gridColor": "lightgray",
+        "zindex": 0,
+        "gridWidth": 0.5
+      }
+    },
+
+    "color": {
+      "field": "gas_type",
+      "type": "nominal",
+      "legend": {
+        "orient": "top-right",
+        "columns": 1
+      },
+      "scale": {
+        "scheme": "set1"
+      },
+      "title": "Greenhouse Gas Types"
+    },
+
+    "tooltip": [
+      {"field": "year", "type": "temporal", "title": "Year"},
+      {"field": "gas_type", "type": "nominal", "title": "Emission Type"},
+      {"field": "value", "type": "quantitative", "title": "Emissions"}
+    ]
+  }
+}
