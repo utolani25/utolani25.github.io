@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/Project_ghg_long_form.csv"
+  },
+  "mark": {
+    "type": "line",
+    "tooltip": true
+  },
+  "width": 500,
+  "height": 350,
+  "title": {
+    "text": "GHG emissions on a territorial, residence and carbon footprint basis: UK",
+    "subtitle": ["Source: ONS"],
+    "font": "Trebuchet MS"
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {"grid": false, "labelFont": "Trebuchet MS", "titleFont": "Trebuchet MS"}
+    },
+    "y": {
+      "field": "GHG_Emissions",
+      "type": "quantitative",
+      "title":"GHG Emissions",
+      "axis": {"labelFont": "Trebuchet MS", "titleFont": "Trebuchet MS"}
+    },
+    "color": {
+      "field": "Sector",
+      "legend": {"labelFont": "Trebuchet MS", "titleFont": "Trebuchet MS"}
+    },
+    "tooltip": [
+      {"field": "year", "type": "temporal", "title": "Year"},
+      {"field": "GHG_Emissions", "type": "quantitative", "title": "GHG Emissions"},
+      {"field": "Sector", "type": "nominal", "title": "Sector"}
+    ]
+  },
+  "config": {
+    "font": "Trebuchet MS"
+  }
+}

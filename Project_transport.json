@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   "title": {
+    "text": "GHG Emissions by Transport Mode in the UK",
+    "font": "Trebuchet MS",
+    "fontSize": 20,
+    "subtitle": ["Source: ONS"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "rgb(33, 37, 41)"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    },
+    "title": {
+      "font": "Trebuchet MS"
+    },
+    "axis": {
+      "labelFont": "Trebuchet MS",
+      "titleFont": "Trebuchet MS"
+    },
+    "legend": {
+      "labelFont": "Trebuchet MS",
+      "titleFont": "Trebuchet MS"
+    },
+    "guide": {
+      "labelFont": "Trebuchet MS"
+    }
+  },"data": {
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/Project_transport.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.Year >= 2011 && datum.Year <= 2022"
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year",
+      "axis": {
+        "labelAngle": 45,
+        "labelLimit": 200
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "stack": "zero",
+      "title": "GHG Emissions"
+    },
+    "color": {
+      "field": "mode",
+      "type": "nominal",
+      "title": "Transport Mode",
+      "scale": {"scheme": "accent"}
+    },
+    "tooltip": [
+      {"field": "Year", "title": "Year"},
+      {"field": "mode", "title": "Transport Mode"},
+      {"field": "value", "title": "GHG Emissions", "format":".2f"}
+    ]
+  }
+}
