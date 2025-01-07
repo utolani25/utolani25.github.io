@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Greenhouse gas emissions vs GDP growth",
+    "text": "Greenhouse gas emissions vs GDP growth (2022)",
     "font": "Trebuchet MS",
     "fontSize": 16,
-    "subtitle": ["GDP growth (x), and GHG emissions (y)", ""],
+    "subtitle": ["GDP growth (x), and GHG emissions (y)", "Source: World Bank"],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",
