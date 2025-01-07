@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Creates year variable, then defines parameters on this and adds sliders.",
+  "title": {
+    "text": "Greenhouse Gas Emissions - UK",
+    "subtitle": "Territorial greenhouse gas emissions, in million tonnes carbon dioxide equivalent (MtCO2e), UK 1990-2022",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "rgb(33, 37, 41)",
+    "font": "Trebuchet MS",
+    "fontSize": 16
+  },
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/Project_total_ghg.csv"
+  },
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1990,
+      "bind": {
+        "input": "range",
+        "min": 1990,
+        "max": 2022,
+        "step": 1,
+        "name": "Start Year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1990,
+        "max": 2022,
+        "step": 1,
+        "name": "End Year:"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.year >= minYear && datum.year <= maxYear"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {
+        "format": "d",
+        "grid": true,
+        "gridColor": "lightgray",
+        "gridDash": [4, 4],
+        "labelFont": "Trebuchet MS",
+        "labelFontSize": 12,
+        "titleFont": "Trebuchet MS",
+        "titleFontSize": 14
+      }
+    },
+    "y": {
+      "field": "total_ghg",
+      "type": "quantitative",
+      "title": "Total GHG Emissions (MtCO2e)",
+      "axis": {
+        "grid": true,
+        "gridColor": "lightgray",
+        "gridDash": [4, 4],
+        "labelFont": "Trebuchet MS",
+        "labelFontSize": 12,
+        "titleFont": "Trebuchet MS",
+        "titleFontSize": 14
+      }
+    },
+    "tooltip": [
+      { "field": "year", "type": "quantitative", "title": "Year" },
+      { "field": "total_ghg", "type": "quantitative", "title": "Total GHG Emissions (MtCO2e)" }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "rgb(34,139,34)",
+        "strokeWidth": 3,
+        "opacity": 0.8
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "total_ghg",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "transparent",
+        "strokeWidth": 3,
+        "opacity": 0.8
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "total_ghg",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "rgb(34,139,34)",
+        "strokeWidth": 3
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "total_ghg",
+          "type": "quantitative"
+        }
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["year"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Greenhouse gas emissions vs GDP growth",
+    "font": "Trebuchet MS",
+    "fontSize": 16,
+    "subtitle": ["GDP growth (x), and GHG emissions (y)", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "rgb(33, 37, 41)"
+  },
+  "config": {
+    "background": "white",
+    "view": {
+      "stroke": "transparent"
+    },
+    "title": {
+      "font": "Trebuchet MS"
+    },
+    "axis": {
+      "labelFont": "Trebuchet MS",
+      "titleFont": "Trebuchet MS"
+    },
+    "legend": {
+      "labelFont": "Trebuchet MS",
+      "titleFont": "Trebuchet MS"
+    },
+    "guide": {
+      "labelFont": "Trebuchet MS"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/Project_ghg_vs_gdp.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {
+    "type": "circle",
+    "color": "green",
+    "opacity": 0.7
+  },
+  "height": 400,
+  "width": 600,
+  "encoding": {
+    "x": {
+      "field": "gdp_log", 
+      "type": "quantitative",
+      "axis": {"grid": false},
+      "scale": {"domain": [2.7, 5.7]},
+      "title": "GDP per capita"
+    },
+    "y": {
+      "field": "emissions", 
+      "type": "quantitative",
+      "axis": {"grid": false},
+      "scale": {"domain": [0,35]},
+      "title": "GHG Emissions per capita"
+    },
+    "size": {
+      "field": "pop", 
+      "type": "quantitative",
+      "title": "Population",
+      "legend": null,
+      "scale": {"domain": [0, 1e9], "range": [20, 600]}
+    },
+    "color": {
+      "field": "country",
+      "type": "nominal",
+      "title": "Country",
+      "legend": null,
+      "scale": {"scheme": "accent"}
+    },
+    "tooltip": [
+      {"field": "country", "type": "ordinal", "title": "Country"},
+      {"field": "emissions", "type": "quantitative", "title": "GHG Emissions per capita", "format": ".0f"},
+      {"field": "gdp_log", "type": "quantitative", "title": "GDP per capita", "format": ".2f"},
+      {"field": "pop", "type": "quantitative", "title": "Population", "format": ".2f"}
+    ]
+  }
+}

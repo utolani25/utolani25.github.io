@@ -1,0 +1,104 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+
+  "title": {
+    "text": "Sectoral Contribution to GHG Emissions in UK",
+    "subtitle": "Annual greenhouse gas emissions by sector,in million tonnes carbon dioxide equivalent (MtCO2e), UK 1990-2023",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "rgb(33, 37, 41)",
+    "font": "Trebuchet MS",
+    "fontSize": 16
+  },
+  
+  "height": 400,
+  "width": 600,
+
+  "view": {"stroke": "transparent"},
+  
+  "data": {
+     "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/Project_ghg_sector.csv",
+     "format": {"type": "csv"}
+  },
+
+  "selection": {
+    "sector": {"type": "multi", "fields": ["type"], "bind": "legend"}
+  },
+
+  "mark": {
+    "type": "area",
+    "tooltip": true 
+  },
+
+  "encoding": {
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "scale": {"scheme": "goldgreen"},
+      "legend": {
+        "title": "Sector",
+        "orient": "bottom",
+        "columns": 3,
+        "labelLimit": 0,
+        "titleLimit": 0,
+        "labelFontSize": 10,
+        "labelFont": "Trebuchet MS",
+        "titleFont": "Trebuchet MS"
+      }
+    },
+
+    "x": {
+      "field": "year", 
+      "type": "temporal",
+      "timeUnit": "year",
+      "axis": {
+        "grid": false, 
+        "title": "Year",
+        "titleFont": "Trebuchet MS",
+        "labelFont": "Trebuchet MS"
+      }
+    },
+
+    "y": {
+      "field": "total_ghg", 
+      "type": "quantitative",
+      "title": "Total GHG Emissions",
+      "axis": {
+        "gridDash": [1, 5],
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleFontStyle": "italic",
+        "titleY": -10,
+        "titleFont": "Trebuchet MS",
+        "labelFont": "Trebuchet MS"
+      }
+    },
+
+    "opacity": {
+      "condition": {"selection": "sector", "value": 1}, 
+      "value": 0.1
+    },
+
+    "tooltip": [
+      {"field": "year", "type": "temporal", "title": "Year", "timeUnit": "year"}, 
+      {"field": "total_ghg", "type": "quantitative", "title": "GHG Emissions", "format": ".2f"},
+      {"field": "type", "type": "nominal", "title": "Sector"}
+    ]
+  },
+
+  "config": {
+    "title": {
+      "font": "Trebuchet MS",
+      "fontSize": 16
+    },
+    "axis": {
+      "labelFont": "Trebuchet MS",
+      "titleFont": "Trebuchet MS"
+    },
+    "legend": {
+      "labelFont": "Trebuchet MS",
+      "titleFont": "Trebuchet MS"
+    }
+  }
+}

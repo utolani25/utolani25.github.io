@@ -1,0 +1,134 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Interactive map of UK greenhouse gas emissions with year and all sector data by ITL1 regions.",
+"title": {
+  "text": "UK Greenhouse Gas Emissions, by region",
+  "subtitle": [
+    "International Territorial Level 1",
+    "Source: ONS"
+  ],
+"font": "Trebuchet MS",
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "rgb(33, 37, 41)"
+  },
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/Project_ghg_region.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.year == selectedYear"
+    },
+    {
+      "lookup": "ITL Code",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/uk_itl1.geojson",
+          "format": {
+            "property": "features"
+          }
+        },
+        "key": "properties.ITL121CD",
+        "fields": [
+          "geometry",
+          "type",
+          "properties"
+        ]
+      }
+    }
+  ],
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 2005,
+        "max": 2022,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5,
+    "filled": true
+  },
+  "encoding": {
+    "color": {
+      "field": "per_Capita_emissions",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "goldgreen",
+        "domain": [0, 15]
+      },
+      "legend": {
+        "title": "Per Capita Emissions (tCO2)"
+      },
+      "condition": {
+        "test": "datum.hovered == true",
+        "value": "#FF6347"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.ITL121NM",
+        "title": "Region"
+      },
+      {
+        "field": "per_Capita_emissions",
+        "title": "Per Capita CO2 Emissions",
+        "format": ".2f"
+      },
+      {
+        "field": "year",
+        "title": "Year"
+      },
+      {
+        "field": "industry",
+        "title": "Industry Emissions",
+        "format": ".2f"
+      },
+      {
+        "field": "public_sector",
+        "title": "Public Sector Emissions",
+        "format": ".2f"
+      },
+      {
+        "field": "domestic",
+        "title": "Domestic Emissions",
+        "format": ".2f"
+      },
+      {
+        "field": "transport",
+        "title": "Transport Emissions",
+        "format": ".2f"
+      },
+      {
+        "field": "agriculture",
+        "title": "Agriculture Emissions",
+        "format": ".2f"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "mark": {
+      "tooltip": true
+    }
+  }
+}
