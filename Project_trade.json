@@ -4,7 +4,7 @@
     "title": {
       "text": "Share of CO2 emissions in trade (%)",
       "subtitle": [
-      "Source: Global Carbon Budget (2024) ",
+      "Source: Global Carbon Budget (2022) ",
         ""
       ],
    "font": "Trebuchet MS",
@@ -18,8 +18,8 @@
       "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/map_world.geojson",
       "format": {"property": "features"}
     },
-    "width": 600,
-    "height": 330,
+    "width": 700,
+    "height": 450,
     "transform": [
       {
         "lookup": "properties.ISO3",
