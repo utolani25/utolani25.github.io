@@ -14,12 +14,11 @@
 
     <!-Navbar -->
     <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="project.html">Project</a>
-        <a href="https://github.com/utolani25/utolani25.github.io">GitHub</a>
+        <a href="https://github.com/utolani25/utolani25.github.io/index.html">Home</a>
+        <a href="https://github.com/utolani25/utolani25.github.io/portfolio.html">Portfolio</a>
+        <a href="https://github.com/utolani25/utolani25.github.io/project.html">Project</a>
         <a href="https://www.linkedin.com/in/unnati-tolani-7b24241ab/">LinkedIn</a>
-        
+        <a href="https://github.com/utolani25/utolani25.github.io">GitHub</a>
     </div>
 
     <!-- Header section -->
@@ -29,36 +28,32 @@
 
 <!-- Introductory Section -->
 <section class="intro">
-    <p>Welcome to my final project for PP434: Automated Data Visualisation for Policymaking.Here, I’ve used data-driven visualizations to transform GHG emissions trends into strategic climate policies in the UK. </p>
+    <p>Welcome to my final project for PP434: Automated Data Visualisation for Policymaking. Here, I’ve explored greenhouse gas (GHG) emissions trends and their implications for policymaking. Through data-driven visualizations, this project aims to uncover insights that bridge the gap between complex datasets and targeted climate strategies.</p>
 </section>
     
 
     <!-- Main content section -->
    <section> <div class="main-content">
-        <header><h2>Introduction</h2></header>
-      <p>As the effects of climate change become increasingly evident, the need for urgent action has pushed environmental sustainability to the forefront of global policy agendas. With the ambitious goal of reaching net-zero emissions by 2050, the UK has been formulating climate mitigation strategies aimed at reducing greenhouse gas emissions and transitioning to a low-carbon economy. Despite the commitment, the UK’s Third National Adaptation Programme (NAP3) has faced criticism for failing to address the growing physical impacts of climate change. Adapting to these risks is crucial to protecting vulnerable communities. This dual approach - mitigation and adaptation - is key to achieving the net-zero target while preserving human health, biodiversity, and economic stability. Achieving the net-zero target and building resilience require the UK to expedite adaptation efforts, strengthen cross-sector collaboration, and ensure adequate resource allocation.</p>
+        <header><h2>The Climate Change Challenge</h2></header>
+        <p>As the effects of climate change become increasingly evident, the need for urgent action has pushed environmental sustainability to the forefront of global policy agendas. With the ambitious goal of reaching net-zero emissions by 2050, the UK has been formulating climate mitigation strategies aimed at reducing greenhouse gas emissions and transitioning to a low-carbon economy. However, alongside mitigation, it is crucial to adapt to the physical risks posed by climate change to ensure that vulnerable systems and communities are protected. This dual approach - mitigation and adaptation - is key to achieving the net-zero target while also preserving human health, biodiversity, and economic stability. Despite the commitment, the UK’s Third National Adaptation Programme (NAP3) has faced criticism for failing to keep pace with the urgent need to address the growing physical impacts of climate change. To successfully meet the net-zero target and build resilience, it is imperative for the UK to accelerate its adaptation efforts, enhance cross-sector collaboration, and allocate sufficient resources to address these challenges.
+            The purpose of this project is to offer an analytical perspective on the critical trends and implications of greenhouse gas emissions in the UK. By diving deep into long-term emissions data, sectoral contributions, the role of GDP growth, and regional differences, this analysis seeks to uncover the driving forces behind the UK’s carbon footprint. 
+            As a public policy student, my hope is that this project will shed light on the trends driving the UK’s emissions and inspire practical policy solutions that help the country achieve its climate goals while building a more sustainable and resilient future.
+            </p>
         </div>
-    </section>
-
-    <section>
-        <header><h2>Section I: Aims and Objectives</h2></header>
-        <p>The purpose of this project is to offer an analytical perspective on the critical trends and implications of greenhouse gas emissions in the UK. By diving deep into long-term emissions data, sectoral contributions, the role of GDP growth, and regional differences, this analysis seeks to uncover the driving forces behind the UK’s carbon footprint. </p>
-<p>As a public policy student, my hope is that this project will shed light on the trends driving the UK’s emissions and inspire practical policy solutions that help the country achieve its climate goals while building a more sustainable and resilient future.
-</p>
     </section>
     
         <section>
             <header><h2>Section II: Methodology and Limitations </h2></header>
-            <p>The analysis primarily relies on government estimates of greenhouse gases published annually by the Office for National Statistics (ONS) and the Department for Energy Security & Net Zero (DESNZ). Python was used to scrape some of the data from these sources. The data for GDP growth per capita and emissions volumes were standardized using logarithmic transformations to ensure compatibility across datasets. This process was performed using Python scripts. Additionally, most of the datasets were reshaped into long format to facilitate the creation of visualizations in Vega Lite. There were also issues with data completeness due to inconsistent data, and rows with missing values were dropped.</p>
-<p>A key limitation of the analysis is the lack of comprehensive data on the impact of carbon taxes on greenhouse gas emissions. Exploring this relationship would provide valuable insights for assessing the effectiveness of carbon taxes in driving emission reductions. Additionally, this project focuses on emissions within the UK, excluding those from imported goods, biomass, and the UK's share of international aviation and shipping. </p>
-        </section>
-    
-            <section><header>
+            <p>The analysis primarily uses government estimates of greenhouse gases published annually by the Office for National Statistics (ONS) and the Department for Energy Security & Net Zero (DESNZ). Python was used to scrape some of the data from these sources. After extraction, the data was cleaned, standardized, and merged using Python scripts. Key variables, such as GDP growth per capita and emissions volumes, were standardized to ensure compatibility across datasets. The cleaned data was saved as CSV files locally and then uploaded to GitHub. These files were used to create visualizations with Vega Lite, streamlining the process and ensuring easy access for analysis and visualization tasks. A key limitation of the analysis is the lack of comprehensive data on the impact of carbon taxes on greenhouse gas emissions. Exploring this relationship would provide valuable insights for assessing the effectiveness of carbon taxes in driving emission reductions. Additionally, this project focuses on emissions within the UK, excluding those from imported goods, biomass, and the UK's share of international aviation and shipping.</p>
+</section>
+
+<section><header>
     <h2>Section III: Data Analysis
     </h2></header></section>
     
         <section>
-       <p>The UK tracks greenhouse gas emissions through territorial, residence-based, and footprint-based categories. Territorial emissions cover gases emitted within UK borders, residence-based include emissions linked to UK residents and businesses globally, and footprint emissions reflect the impact of UK consumption, regardless of production location. This project focuses on territorial emissions as they offer a direct, consistent measure for tracking progress toward national climate goals.</p> <figure id="Location1"></figure> 
+            <p>The UK tracks greenhouse gas emissions using three main categories: territorial, residence-based (production), and footprint-based (consumption). Territorial emissions measure gases emitted directly within the UK’s borders, such as those from domestic industries, transportation, and energy production. Residence-based emissions consider activities tied to UK residents and businesses, including emissions generated both domestically and abroad. Meanwhile, footprint emissions focus on the environmental impact of goods and services consumed in the UK, regardless of where they are produced. This multi-faceted approach provides a detailed view of the UK's contributions to global emissions and helps inform targeted climate policies. This project focuses on territorial emissions because they provide a direct measure of the greenhouse gases emitted within the UK's borders, offering a clear and consistent basis for tracking progress toward national climate goals. </p>
+        <figure id="Location1"></figure> 
     </section>
 
     <section>
@@ -81,7 +76,8 @@
 
     <section>
         <header><h2>Pedal Power- Cycling Toward a Greener Future?</h2></header>
-  <p>An analysis of the transport sector shows key trends in UK greenhouse gas emissions. Since 1990, van emissions have risen by 40%, while heavy goods vehicle emissions have dropped by 12% due to improved fuel efficiency and cleaner technologies. Emissions from international aviation are also increasing, prompting measures in the UK’s 6th Carbon Budget, including stricter efficiency standards, support for sustainable aviation fuels (SAF), and low-carbon transport investments. Eco-friendly options like walking and cycling produce zero emissions, reduce carbon footprints, ease congestion, and promote healthier lifestyles, aligning with net-zero goals.</p><figure id="Location5"></figure> </section>
+    <p>A closer examination of the transport sector reveals several key trends in greenhouse gas emissions over recent decades. Notably, emissions from vans have increased by 40% since 1990, highlighting the growing reliance on light commercial vehicles in the UK. Conversely, emissions from heavy goods vehicles (HGVs) have fallen by 12%, reflecting improvements in fuel efficiency and the adoption of cleaner technologies.However, a significant development is the rising share of emissions from international aviation. As air travel continues to expand, the environmental impact of this sector has come under greater scrutiny. In response, the UK’s 6th Carbon Budget has introduced measures to address these challenges. These include stricter efficiency standards, increased support for sustainable aviation fuels (SAF), and investments in low-carbon transport alternatives to ensure alignment with the UK's net-zero emissions target. Walking, cycling, and running are the most eco-friendly transport options, producing zero CO2 emissions. Encouraging cycling to work can help reduce carbon footprints, ease congestion, and promote healthier lifestyles, aligning with the UK's net-zero goals.</p>
+   <figure id="Location5"></figure> </section>
 
     <section>
         <header> <h2> Mapping the UK’s Greenhouse Gas Emissions</h2></header>
@@ -90,9 +86,15 @@
     </section>
 
     <section>
-        <header> <h2> Has UK been able to reduce emissions while achieving economic growth? </h2></header>
+        <header> <h2> Carbon Embedded in Trade: A Comparative Analysis</h2></header>
+        <p>As of 2022, the UK’s emissions footprint embedded in trade activities was 55.67%, reflecting its highly export-dependent economy. In contrast, countries like the US and Japan had lower trade-related emissions, with the US around 11% and Japan closer to 15%, highlighting their less trade-reliant economic structures.
+ </p>><figure id="Location7"></figure> 
+    </section>
+
+    <section>
+        <header> <h2> Has Uk been able to reduce emissions while achieving economic growth? </h2></header>
         <p>Economic growth is often tied to increased energy use and emissions, especially in energy-intensive sectors. However, the UK shows that growth can align with cutting emissions. Both GDP per capita and CO₂ emissions per capita have fallen, and recent trends suggest emissions will continue to decline.This highlights how clean technology investments can drive both innovation and progress. 
-       </p><figure id="Location7"></figure> 
+       </p><figure id="Location8"></figure> 
     </section>
 
     <section>
@@ -114,7 +116,8 @@
     let figure_4_spec = "Project_ghg_sector.json"
     let figure_5_spec = "Project_transport.json"
     let figure_6_spec = "Project_region.json"
-    let figure_7_spec = "Project_ghg_gdp.json"
+    let figure_7_spec = "Project_trade.json"
+    let figure_8_spec = "Project_ghg_gdp.json"
 
     vegaEmbed("#Location1", figure_1_spec)
     vegaEmbed("#Location2", figure_2_spec) 
@@ -123,6 +126,7 @@
     vegaEmbed("#Location5", figure_5_spec)
     vegaEmbed("#Location6", figure_6_spec)
     vegaEmbed("#Location7", figure_7_spec)
+    vegaEmbed("#Location8", figure_8_spec)
 </script>
 
 </body>
