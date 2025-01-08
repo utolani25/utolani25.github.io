@@ -1,0 +1,54 @@
+
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Share of CO2 emissions in trade (%)",
+      "subtitle": [
+      "Source: Global Carbon Budget (2024) ",
+        ""
+      ],
+   "font": "Trebuchet MS",
+      "fontSize": 16,
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "anchor": "middle",
+      "color": "rgb(33, 37, 41)"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/map_world.geojson",
+      "format": {"property": "features"}
+    },
+    "width": 600,
+    "height": 330,
+    "transform": [
+      {
+        "lookup": "properties.ISO3",
+        "from": {
+          "key": "ISO3",
+          "fields": ["country", "value"],
+          "data": {
+            "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/Project_trade.csv"
+          }
+        }
+      }
+    ],
+    "projection": {
+      "type": "naturalEarth1",
+      "scale": 125,
+      "translate": [285, 180]
+    },
+    "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.3},
+    "encoding": {
+      "color": {
+        "condition": {"value": "lightgrey", "test": "!datum['value']"},
+        "field": "value",
+        "type": "quantitative",
+        "legend": null,
+        "scale": {"scheme": "goldgreen", "reverse": false}
+      },
+      "tooltip": [
+        {"field": "country", "title": "Country"},
+        {"field": "value", "title": "Share of emissions in trade(%)"}
+      ]
+    }
+  }
