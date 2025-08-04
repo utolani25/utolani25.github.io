@@ -1,0 +1,276 @@
+﻿name,year,gva_rate,ITL Code
+Yorkshire and the Humber,1999,3.2,TLE
+Yorkshire and the Humber,2000,3.5,TLE
+Yorkshire and the Humber,2001,4.7,TLE
+Yorkshire and the Humber,2002,5.1,TLE
+Yorkshire and the Humber,2003,6.3,TLE
+Yorkshire and the Humber,2004,4.9,TLE
+Yorkshire and the Humber,2005,4.1,TLE
+Yorkshire and the Humber,2006,4.5,TLE
+Yorkshire and the Humber,2007,5.1,TLE
+Yorkshire and the Humber,2008,0.7,TLE
+Yorkshire and the Humber,2009,-2.3,TLE
+Yorkshire and the Humber,2010,0.1,TLE
+Yorkshire and the Humber,2011,1.0,TLE
+Yorkshire and the Humber,2012,1.9,TLE
+Yorkshire and the Humber,2013,2.2,TLE
+Yorkshire and the Humber,2014,2.7,TLE
+Yorkshire and the Humber,2015,3.9,TLE
+Yorkshire and the Humber,2016,1.3,TLE
+Yorkshire and the Humber,2017,4.5,TLE
+Yorkshire and the Humber,2018,2.8,TLE
+Yorkshire and the Humber,2019,3.4,TLE
+Yorkshire and the Humber,2020,-3.9,TLE
+Yorkshire and the Humber,2021,10.9,TLE
+Yorkshire and the Humber,2022,8.6,TLE
+Yorkshire and the Humber,2023,7.6,TLE
+Wales,1999,2.0,TLL
+Wales,2000,4.6,TLL
+Wales,2001,3.2,TLL
+Wales,2002,4.1,TLL
+Wales,2003,6.1,TLL
+Wales,2004,5.2,TLL
+Wales,2005,3.9,TLL
+Wales,2006,4.5,TLL
+Wales,2007,3.2,TLL
+Wales,2008,0.4,TLL
+Wales,2009,-1.4,TLL
+Wales,2010,2.1,TLL
+Wales,2011,3.4,TLL
+Wales,2012,3.1,TLL
+Wales,2013,3.5,TLL
+Wales,2014,2.5,TLL
+Wales,2015,3.2,TLL
+Wales,2016,3.8,TLL
+Wales,2017,3.3,TLL
+Wales,2018,3.6,TLL
+Wales,2019,4.3,TLL
+Wales,2020,-5.2,TLL
+Wales,2021,5.0,TLL
+Wales,2022,8.8,TLL
+Wales,2023,7.6,TLL
+Scotland,1999,1.6,TLM
+Scotland,2000,4.2,TLM
+Scotland,2001,5.9,TLM
+Scotland,2002,4.0,TLM
+Scotland,2003,5.9,TLM
+Scotland,2004,6.2,TLM
+Scotland,2005,5.4,TLM
+Scotland,2006,6.2,TLM
+Scotland,2007,3.4,TLM
+Scotland,2008,4.1,TLM
+Scotland,2009,-0.9,TLM
+Scotland,2010,-0.7,TLM
+Scotland,2011,1.8,TLM
+Scotland,2012,2.8,TLM
+Scotland,2013,4.2,TLM
+Scotland,2014,4.3,TLM
+Scotland,2015,0.7,TLM
+Scotland,2016,1.0,TLM
+Scotland,2017,4.6,TLM
+Scotland,2018,1.6,TLM
+Scotland,2019,3.5,TLM
+Scotland,2020,-5.3,TLM
+Scotland,2021,7.2,TLM
+Scotland,2022,10.5,TLM
+Scotland,2023,9.1,TLM
+Northern Ireland,1999,5.6,TLN
+Northern Ireland,2000,7.6,TLN
+Northern Ireland,2001,3.8,TLN
+Northern Ireland,2002,2.8,TLN
+Northern Ireland,2003,7.5,TLN
+Northern Ireland,2004,4.3,TLN
+Northern Ireland,2005,4.7,TLN
+Northern Ireland,2006,5.1,TLN
+Northern Ireland,2007,2.5,TLN
+Northern Ireland,2008,0.2,TLN
+Northern Ireland,2009,-2.6,TLN
+Northern Ireland,2010,-1.8,TLN
+Northern Ireland,2011,1.5,TLN
+Northern Ireland,2012,3.6,TLN
+Northern Ireland,2013,2.8,TLN
+Northern Ireland,2014,2.5,TLN
+Northern Ireland,2015,3.0,TLN
+Northern Ireland,2016,5.4,TLN
+Northern Ireland,2017,3.9,TLN
+Northern Ireland,2018,2.3,TLN
+Northern Ireland,2019,5.2,TLN
+Northern Ireland,2020,-3.9,TLN
+Northern Ireland,2021,10.4,TLN
+Northern Ireland,2022,8.4,TLN
+Northern Ireland,2023,10.2,TLN
+North East,1999,1.9,TLC
+North East,2000,3.3,TLC
+North East,2001,4.4,TLC
+North East,2002,6.7,TLC
+North East,2003,5.7,TLC
+North East,2004,8.3,TLC
+North East,2005,4.5,TLC
+North East,2006,5.1,TLC
+North East,2007,1.7,TLC
+North East,2008,2.4,TLC
+North East,2009,-0.7,TLC
+North East,2010,1.0,TLC
+North East,2011,1.4,TLC
+North East,2012,2.4,TLC
+North East,2013,1.3,TLC
+North East,2014,2.7,TLC
+North East,2015,3.4,TLC
+North East,2016,1.2,TLC
+North East,2017,2.5,TLC
+North East,2018,1.4,TLC
+North East,2019,4.4,TLC
+North East,2020,-6.0,TLC
+North East,2021,8.2,TLC
+North East,2022,7.5,TLC
+North East,2023,9.3,TLC
+North West,1999,5.1,TLD
+North West,2000,2.5,TLD
+North West,2001,6.3,TLD
+North West,2002,4.5,TLD
+North West,2003,5.1,TLD
+North West,2004,5.2,TLD
+North West,2005,4.7,TLD
+North West,2006,5.2,TLD
+North West,2007,3.3,TLD
+North West,2008,1.9,TLD
+North West,2009,-1.0,TLD
+North West,2010,1.6,TLD
+North West,2011,0.2,TLD
+North West,2012,2.7,TLD
+North West,2013,3.1,TLD
+North West,2014,3.4,TLD
+North West,2015,3.3,TLD
+North West,2016,2.8,TLD
+North West,2017,4.2,TLD
+North West,2018,2.0,TLD
+North West,2019,4.1,TLD
+North West,2020,-2.6,TLD
+North West,2021,6.8,TLD
+North West,2022,9.9,TLD
+North West,2023,8.5,TLD
+East Midlands,1999,2.2,TLF
+East Midlands,2000,3.3,TLF
+East Midlands,2001,3.6,TLF
+East Midlands,2002,3.2,TLF
+East Midlands,2003,4.2,TLF
+East Midlands,2004,4.0,TLF
+East Midlands,2005,4.3,TLF
+East Midlands,2006,4.6,TLF
+East Midlands,2007,3.7,TLF
+East Midlands,2008,3.3,TLF
+East Midlands,2009,-3.5,TLF
+East Midlands,2010,2.7,TLF
+East Midlands,2011,0.8,TLF
+East Midlands,2012,3.1,TLF
+East Midlands,2013,3.3,TLF
+East Midlands,2014,2.8,TLF
+East Midlands,2015,2.2,TLF
+East Midlands,2016,1.6,TLF
+East Midlands,2017,2.7,TLF
+East Midlands,2018,3.7,TLF
+East Midlands,2019,3.0,TLF
+East Midlands,2020,-2.7,TLF
+East Midlands,2021,7.0,TLF
+East Midlands,2022,6.6,TLF
+East Midlands,2023,7.7,TLF
+West Midlands,1999,3.0,TLG
+West Midlands,2000,3.1,TLG
+West Midlands,2001,3.6,TLG
+West Midlands,2002,3.3,TLG
+West Midlands,2003,4.5,TLG
+West Midlands,2004,4.3,TLG
+West Midlands,2005,3.8,TLG
+West Midlands,2006,2.8,TLG
+West Midlands,2007,2.2,TLG
+West Midlands,2008,2.5,TLG
+West Midlands,2009,-3.8,TLG
+West Midlands,2010,2.7,TLG
+West Midlands,2011,2.3,TLG
+West Midlands,2012,2.8,TLG
+West Midlands,2013,4.0,TLG
+West Midlands,2014,4.0,TLG
+West Midlands,2015,3.1,TLG
+West Midlands,2016,3.6,TLG
+West Midlands,2017,4.4,TLG
+West Midlands,2018,2.8,TLG
+West Midlands,2019,1.6,TLG
+West Midlands,2020,-5.7,TLG
+West Midlands,2021,7.6,TLG
+West Midlands,2022,7.2,TLG
+West Midlands,2023,8.6,TLG
+London,1999,3.7,TLI
+London,2000,6.2,TLI
+London,2001,2.4,TLI
+London,2002,3.0,TLI
+London,2003,5.6,TLI
+London,2004,4.5,TLI
+London,2005,6.9,TLI
+London,2006,4.9,TLI
+London,2007,7.2,TLI
+London,2008,1.2,TLI
+London,2009,-3.1,TLI
+London,2010,2.3,TLI
+London,2011,1.9,TLI
+London,2012,2.7,TLI
+London,2013,3.6,TLI
+London,2014,5.4,TLI
+London,2015,2.2,TLI
+London,2016,5.3,TLI
+London,2017,3.2,TLI
+London,2018,3.1,TLI
+London,2019,2.5,TLI
+London,2020,-7.5,TLI
+London,2021,8.3,TLI
+London,2022,12.3,TLI
+London,2023,8.0,TLI
+South East,1999,3.9,TLJ
+South East,2000,4.4,TLJ
+South East,2001,3.5,TLJ
+South East,2002,4.2,TLJ
+South East,2003,4.4,TLJ
+South East,2004,2.7,TLJ
+South East,2005,4.3,TLJ
+South East,2006,3.5,TLJ
+South East,2007,3.4,TLJ
+South East,2008,4.6,TLJ
+South East,2009,-2.6,TLJ
+South East,2010,1.6,TLJ
+South East,2011,1.9,TLJ
+South East,2012,2.6,TLJ
+South East,2013,2.7,TLJ
+South East,2014,3.1,TLJ
+South East,2015,3.0,TLJ
+South East,2016,1.4,TLJ
+South East,2017,3.2,TLJ
+South East,2018,3.0,TLJ
+South East,2019,5.2,TLJ
+South East,2020,-1.9,TLJ
+South East,2021,3.4,TLJ
+South East,2022,6.3,TLJ
+South East,2023,7.6,TLJ
+South West,1999,4.2,TLK
+South West,2000,3.9,TLK
+South West,2001,5.0,TLK
+South West,2002,3.7,TLK
+South West,2003,4.7,TLK
+South West,2004,4.7,TLK
+South West,2005,3.5,TLK
+South West,2006,4.0,TLK
+South West,2007,3.0,TLK
+South West,2008,4.2,TLK
+South West,2009,-1.9,TLK
+South West,2010,2.5,TLK
+South West,2011,0.4,TLK
+South West,2012,2.3,TLK
+South West,2013,2.1,TLK
+South West,2014,4.4,TLK
+South West,2015,1.3,TLK
+South West,2016,2.6,TLK
+South West,2017,4.1,TLK
+South West,2018,2.1,TLK
+South West,2019,3.6,TLK
+South West,2020,-4.5,TLK
+South West,2021,10.3,TLK
+South West,2022,7.9,TLK
+South West,2023,8.2,TLK
