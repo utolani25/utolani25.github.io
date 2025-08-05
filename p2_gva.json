@@ -1,0 +1,90 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Interactive map of productivity rates by ITL1 regions in the UK.",
+    "background": "black",
+    "title": {
+      "text": "UK Productivity Rates by Region",
+      "subtitle": [
+        "Gross value added (balanced) per head annual growth rates, percentage",
+        "Source: ONS"
+      ],
+      "font": "Trebuchet MS",
+      "fontSize": 18,
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "subtitleColor": "#FFFFFF",
+      "anchor": "start",
+      "color": "#FFFFFF"
+    },
+    "width": 500,
+    "height": 350,
+    "data": {
+      "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/gva_region.csv",
+      "format": { "type": "csv" }
+    },
+    "transform": [
+      { "filter": "datum.year == selectedYear" },
+      {
+        "lookup": "ITL Code",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/uk_itl1.geojson",
+            "format": { "property": "features" }
+          },
+          "key": "properties.ITL121CD",
+          "fields": ["geometry", "type", "properties"]
+        }
+      }
+    ],
+    "params": [
+      {
+        "name": "selectedYear",
+        "value": 2023,
+        "bind": {
+          "input": "range",
+          "min": 1999,
+          "max": 2023,
+          "step": 1,
+          "name": "Year: ",
+          "style": "slider-label"
+        }
+      }
+    ],
+    "projection": { "type": "mercator" },
+    "mark": {
+      "type": "geoshape",
+      "stroke": "white",
+      "strokeWidth": 0.5,
+      "filled": true
+    },
+    "encoding": {
+      "color": {
+        "field": "gva_rate",
+        "type": "quantitative",
+        "scale": { "scheme": "blues", "domain": [0, 15] },
+        "legend": {
+          "title": "Productivity Rate",
+          "labelColor": "#FFFFFF",
+          "titleColor": "#FFFFFF",
+          "labelFont": "Trebuchet MS",
+          "titleFont": "Trebuchet MS"
+        }
+      },
+      "tooltip": [
+        { "field": "properties.ITL121NM", "title": "Region" },
+        { "field": "gva_rate", "title": "Productivity Rate (%)", "format": ".2f" },
+        { "field": "year", "title": "Year" }
+      ]
+    },
+    "config": {
+      "view": { "stroke": "transparent" },
+      "mark": { "tooltip": true },
+      "style": {
+        "slider-label": {
+          "font": "Trebuchet MS",
+          "fontSize": 13,
+          "color": "#FFFFFF"
+        }
+      }
+    }
+  }

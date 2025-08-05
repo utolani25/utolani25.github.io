@@ -1,0 +1,130 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "black",
+    "title": {
+      "text": "Median Prices by Property Type",
+      "subtitle": "Source: HM Land Registry, UK (2000–2023)",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "subtitleColor": "#FFFFFF",
+      "anchor": "start",
+      "color": "#FFFFFF",
+      "font": "Trebuchet MS",
+      "fontSize": 18
+    },
+    "height": 350,
+    "width": 500,
+    "view": { "stroke": "transparent" },
+    "data": {
+      "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/median_prices_by_property_type_long.csv",
+      "format": { "type": "csv" }
+    },
+    "selection": {
+      "sector": {
+        "type": "multi",
+        "fields": ["property_type"],
+        "bind": "legend"
+      }
+    },
+    "mark": {
+      "type": "area",
+      "interpolate": "monotone",
+      "tooltip": true
+    },
+    "encoding": {
+  "x": {
+    "field": "year",
+    "type": "temporal",
+    "timeUnit": "year",
+    "title": "Year",
+    "axis": {
+      "grid": true,
+      "gridColor": "#444",
+      "gridDash": [2, 2],
+      "labelFont": "Trebuchet MS",
+      "labelFontSize": 12,
+      "labelColor": "#FFFFFF",
+      "labelAngle": -45,
+      "titleFont": "Trebuchet MS",
+      "titleFontSize": 14,
+      "titleColor": "#FFFFFF"
+    }
+  },
+      "y": {
+        "field": "median_price",
+        "type": "quantitative",
+        "title": "Median Property Price (£)",
+        "scale": {
+          "nice": true
+        },
+        "axis": {
+          "grid": true,
+          "gridColor": "#444",
+          "gridDash": [2, 2],
+          "labelFont": "Trebuchet MS",
+          "labelFontSize": 12,
+          "labelColor": "#FFFFFF",
+          "titleFont": "Trebuchet MS",
+          "titleFontSize": 14,
+          "titleColor": "#FFFFFF",
+          "tickCount": 6
+        }
+      },
+      "color": {
+        "field": "property_type",
+        "type": "nominal",
+        "legend": {
+          "title": "Property Type",
+          "orient": "bottom",
+          "columns": 3,
+          "labelFontSize": 10,
+          "labelColor": "#FFFFFF",
+          "labelFont": "Trebuchet MS",
+          "titleFont": "Trebuchet MS",
+          "titleFontSize": 12,
+          "titleColor": "#FFFFFF"
+        },
+        "scale": {
+          "scheme": "blues"
+        }
+      },
+      "opacity": {
+        "condition": { "selection": "sector", "value": 1 },
+        "value": 0.15
+      },
+      "tooltip": [
+        {
+          "field": "year",
+          "type": "temporal",
+          "title": "Year",
+          "timeUnit": "year"
+        },
+        {
+          "field": "median_price",
+          "type": "quantitative",
+          "title": "Median Price (£)",
+          "format": ",.0f"
+        },
+        {
+          "field": "property_type",
+          "type": "nominal",
+          "title": "Property Type"
+        }
+      ]
+    },
+    "config": {
+      "title": {
+        "font": "Trebuchet MS",
+        "fontSize": 16
+      },
+      "axis": {
+        "labelFont": "Trebuchet MS",
+        "titleFont": "Trebuchet MS"
+      },
+      "legend": {
+        "labelFont": "Trebuchet MS",
+        "titleFont": "Trebuchet MS"
+      }
+    }
+  }
+  

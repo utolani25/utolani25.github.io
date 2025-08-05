@@ -1,0 +1,85 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Scatterplot of log median housing prices (lagged) against log GVA, with regression trend line",
+    "background": "black",
+    "title": {
+      "text": "Relationship Between Housing Costs and Regional Productivity",
+      "subtitle": "OLS regression of log GVA per head on log median housing price (lagged)",
+      "color": "#FFFFFF",
+      "font": "Trebuchet MS",
+      "fontSize": 18,
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "subtitleColor": "#FFFFFF",
+      "anchor": "start"
+    },
+    "width": 500,
+    "height": 350,
+    "data": {
+      "url": "https://raw.githubusercontent.com/utolani25/utolani25.github.io/refs/heads/main/vega_regression_data.csv"
+    },
+    "transform": [
+      {
+        "regression": "log_gva",
+        "on": "log_price_lag",
+        "as": ["log_price_lag", "reg_line"]
+      }
+    ],
+    "layer": [
+      {
+        "mark": {
+          "type": "point",
+          "shape": "circle",
+          "filled": true,
+          "color": "#4db8ff",
+          "size": 70,
+          "opacity": 0.8
+        },
+        "encoding": {
+          "x": {
+            "field": "log_price_lag",
+            "type": "quantitative",
+            "scale": { "domain": [11.9, 12.6] },
+            "axis": {
+              "title": "Log Median Housing Price (Lagged)",
+              "labelColor": "#FFFFFF",
+              "titleColor": "#FFFFFF",
+              "grid": true,
+              "gridColor": "#444",
+              "gridDash": [2, 2]
+            }
+          },
+          "y": {
+            "field": "log_gva",
+            "type": "quantitative",
+            "scale": { "domain": [0.8, 1.9] },
+            "axis": {
+              "title": "Log GVA per Head",
+              "labelColor": "#FFFFFF",
+              "titleColor": "#FFFFFF",
+              "grid": true,
+              "gridColor": "#444",
+              "gridDash": [2, 2]
+            }
+          },
+          "tooltip": [
+            { "field": "log_price_lag", "title": "Log Price (Lagged)", "format": ".2f" },
+            { "field": "log_gva", "title": "Log GVA", "format": ".2f" }
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "line",
+          "color": "#1E90FF",
+          "strokeWidth": 2,
+          "strokeDash": [4, 4]  
+        },
+        "encoding": {
+          "x": { "field": "log_price_lag", "type": "quantitative" },
+          "y": { "field": "reg_line", "type": "quantitative" }
+        }
+      }
+    ]
+  }
+  
